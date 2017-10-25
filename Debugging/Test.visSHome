@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="1ae75111-e23e-45af-ad5c-a05743453470" xmlns="http://schemas.microsoft.com/dsltools/vShome">
+  <features>
+    <modelRootHasFeatures Id="67fbca6f-7f57-46b8-99e9-fe3622a537c6">
+      <feature Id="e3e993a9-41d3-4a6e-9191-a947901677bd" featureType="UserAirConditionerControl" />
+    </modelRootHasFeatures>
+  </features>
+  <devices>
+    <modelRootHasDevices Id="ec6b6178-551b-485e-8fb2-90546775f450">
+      <device Id="6901cb10-5b5d-4250-b319-ef7d2df7a739" returnType="BOOL" deviceType="Actuator" />
+    </modelRootHasDevices>
+    <modelRootHasDevices Id="5b4b02d3-df7c-465a-8178-beb333c55067">
+      <device Id="c57a8b3e-eda1-4c2d-9b00-d4bcfff56925" name="AirConditioner" returnType="INFO" deviceType="Actuator" />
+    </modelRootHasDevices>
+    <modelRootHasDevices Id="3e555e63-b45d-47bc-915c-14ee7d2d8a14">
+      <device Id="67a6f7ca-ad5c-4e77-8689-bacc749dc0c1" returnType="BOOL" deviceType="Actuator" />
+    </modelRootHasDevices>
+    <modelRootHasDevices Id="c31bb1fe-ac32-4383-b301-329cf5a02153">
+      <device Id="3991b3a9-298f-4d9c-8404-7167c160b717" returnType="BOOL" deviceType="Actuator" />
+    </modelRootHasDevices>
+    <modelRootHasDevices Id="71fe2d3a-ea64-4da4-af3c-c7229a319798">
+      <device Id="b16916d4-af36-4233-ab2f-2761c663aec3" name="AutomaticWindow" returnType="INFO" deviceType="Actuator" />
+    </modelRootHasDevices>
+  </devices>
+</modelRoot>

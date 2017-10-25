@@ -1,0 +1,1179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Ufba.vShome.vShomeDomainModel.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.vShome</value>
+    <comment>Description for DslLibrary &apos;vShome&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.vShomeDomainModel.DisplayName" xml:space="preserve">
+    <value>Class Diagrams</value>
+    <comment>DisplayName for DslLibrary &apos;vShome&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRoot.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRoot.DisplayName" xml:space="preserve">
+    <value>Model Root</value>
+    <comment>DisplayName for DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRoot/Name.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.ModelRoot.Name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRoot/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRoot/Port.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.ModelRoot.Port</value>
+    <comment>Description for DomainProperty &apos;Port&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRoot/Port.DisplayName" xml:space="preserve">
+    <value>Port</value>
+    <comment>DisplayName for DomainProperty &apos;Port&apos; on DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Feature.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainClass &apos;Feature&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Feature.DisplayName" xml:space="preserve">
+    <value>Feature</value>
+    <comment>DisplayName for DomainClass &apos;Feature&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Feature/FeatureType.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.Feature.Feature Type</value>
+    <comment>Description for DomainProperty &apos;FeatureType&apos; on DomainClass &apos;Feature&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Feature/FeatureType.DisplayName" xml:space="preserve">
+    <value>Feature Type</value>
+    <comment>DisplayName for DomainProperty &apos;FeatureType&apos; on DomainClass &apos;Feature&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Feature/Serial.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.Feature.Serial</value>
+    <comment>Description for DomainProperty &apos;Serial&apos; on DomainClass &apos;Feature&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Feature/Serial.DisplayName" xml:space="preserve">
+    <value>Serial</value>
+    <comment>DisplayName for DomainProperty &apos;Serial&apos; on DomainClass &apos;Feature&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Feature/FeatureName.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.Feature.Feature Name</value>
+    <comment>Description for DomainProperty &apos;FeatureName&apos; on DomainClass &apos;Feature&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Feature/FeatureName.DisplayName" xml:space="preserve">
+    <value>Feature Name</value>
+    <comment>DisplayName for DomainProperty &apos;FeatureName&apos; on DomainClass &apos;Feature&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Comment.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainClass &apos;Comment&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Comment.DisplayName" xml:space="preserve">
+    <value>Comment</value>
+    <comment>DisplayName for DomainClass &apos;Comment&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Comment/Text.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainProperty &apos;Text&apos; on DomainClass &apos;Comment&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Comment/Text.DisplayName" xml:space="preserve">
+    <value>Text</value>
+    <comment>DisplayName for DomainProperty &apos;Text&apos; on DomainClass &apos;Comment&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Device.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.Device</value>
+    <comment>Description for DomainClass &apos;Device&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Device.DisplayName" xml:space="preserve">
+    <value>Device</value>
+    <comment>DisplayName for DomainClass &apos;Device&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Device/Name.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.Device.Name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;Device&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Device/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;Device&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Device/ReturnType.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.Device.Return Type</value>
+    <comment>Description for DomainProperty &apos;ReturnType&apos; on DomainClass &apos;Device&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Device/ReturnType.DisplayName" xml:space="preserve">
+    <value>Return Type</value>
+    <comment>DisplayName for DomainProperty &apos;ReturnType&apos; on DomainClass &apos;Device&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Device/DeviceType.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.Device.Device Type</value>
+    <comment>Description for DomainProperty &apos;DeviceType&apos; on DomainClass &apos;Device&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Device/DeviceType.DisplayName" xml:space="preserve">
+    <value>Device Type</value>
+    <comment>DisplayName for DomainProperty &apos;DeviceType&apos; on DomainClass &apos;Device&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRootHasComments.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainClass &apos;ModelRootHasComments&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRootHasComments.DisplayName" xml:space="preserve">
+    <value>Model Root Has Comments</value>
+    <comment>DisplayName for DomainClass &apos;ModelRootHasComments&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRootHasComments/ModelRoot.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainRole &apos;ModelRoot&apos; on DomainRelationship &apos;ModelRootHasComments&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRootHasComments/ModelRoot.DisplayName" xml:space="preserve">
+    <value>Model Root</value>
+    <comment>DisplayName for DomainRole &apos;ModelRoot&apos; on DomainRelationship &apos;ModelRootHasComments&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRootHasComments/ModelRoot.PropertyDisplayName" xml:space="preserve">
+    <value>Comments</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ModelRoot&apos; on DomainRelationship &apos;ModelRootHasComments&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRootHasComments/Comment.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainRole &apos;Comment&apos; on DomainRelationship &apos;ModelRootHasComments&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRootHasComments/Comment.DisplayName" xml:space="preserve">
+    <value>Comment</value>
+    <comment>DisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;ModelRootHasComments&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRootHasComments/Comment.PropertyDisplayName" xml:space="preserve">
+    <value>Model Root</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;ModelRootHasComments&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesActuator.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureReferencesActuator</value>
+    <comment>Description for DomainClass &apos;FeatureReferencesActuator&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesActuator.DisplayName" xml:space="preserve">
+    <value>Feature References Actuator</value>
+    <comment>DisplayName for DomainClass &apos;FeatureReferencesActuator&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesActuator/Feature.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureReferencesActuator.Feature</value>
+    <comment>Description for DomainRole &apos;Feature&apos; on DomainRelationship &apos;FeatureReferencesActuator&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesActuator/Feature.DisplayName" xml:space="preserve">
+    <value>Feature</value>
+    <comment>DisplayName for DomainRole &apos;Feature&apos; on DomainRelationship &apos;FeatureReferencesActuator&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesActuator/Feature.PropertyDisplayName" xml:space="preserve">
+    <value>Actuator</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Feature&apos; on DomainRelationship &apos;FeatureReferencesActuator&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesActuator/Device.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureReferencesActuator.Device</value>
+    <comment>Description for DomainRole &apos;Device&apos; on DomainRelationship &apos;FeatureReferencesActuator&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesActuator/Device.DisplayName" xml:space="preserve">
+    <value>Device</value>
+    <comment>DisplayName for DomainRole &apos;Device&apos; on DomainRelationship &apos;FeatureReferencesActuator&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesActuator/Device.PropertyDisplayName" xml:space="preserve">
+    <value>Has Actuator</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Device&apos; on DomainRelationship &apos;FeatureReferencesActuator&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesFather.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureReferencesFather</value>
+    <comment>Description for DomainClass &apos;FeatureReferencesFather&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesFather.DisplayName" xml:space="preserve">
+    <value>Feature References Father</value>
+    <comment>DisplayName for DomainClass &apos;FeatureReferencesFather&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesFather/SourceFeature.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureReferencesFather.SourceFeature</value>
+    <comment>Description for DomainRole &apos;SourceFeature&apos; on DomainRelationship &apos;FeatureReferencesFather&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesFather/SourceFeature.DisplayName" xml:space="preserve">
+    <value>Source Feature</value>
+    <comment>DisplayName for DomainRole &apos;SourceFeature&apos; on DomainRelationship &apos;FeatureReferencesFather&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesFather/SourceFeature.PropertyDisplayName" xml:space="preserve">
+    <value>Father</value>
+    <comment>PropertyDisplayName for DomainRole &apos;SourceFeature&apos; on DomainRelationship &apos;FeatureReferencesFather&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesFather/TargetFeature.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureReferencesFather.TargetFeature</value>
+    <comment>Description for DomainRole &apos;TargetFeature&apos; on DomainRelationship &apos;FeatureReferencesFather&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesFather/TargetFeature.DisplayName" xml:space="preserve">
+    <value>Target Feature</value>
+    <comment>DisplayName for DomainRole &apos;TargetFeature&apos; on DomainRelationship &apos;FeatureReferencesFather&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesFather/TargetFeature.PropertyDisplayName" xml:space="preserve">
+    <value>Has Father</value>
+    <comment>PropertyDisplayName for DomainRole &apos;TargetFeature&apos; on DomainRelationship &apos;FeatureReferencesFather&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRootHasFeatures.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.ModelRootHasFeatures</value>
+    <comment>Description for DomainClass &apos;ModelRootHasFeatures&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRootHasFeatures.DisplayName" xml:space="preserve">
+    <value>Model Root Has Features</value>
+    <comment>DisplayName for DomainClass &apos;ModelRootHasFeatures&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRootHasFeatures/ModelRoot.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.ModelRootHasFeatures.ModelRoot</value>
+    <comment>Description for DomainRole &apos;ModelRoot&apos; on DomainRelationship &apos;ModelRootHasFeatures&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRootHasFeatures/ModelRoot.DisplayName" xml:space="preserve">
+    <value>Model Root</value>
+    <comment>DisplayName for DomainRole &apos;ModelRoot&apos; on DomainRelationship &apos;ModelRootHasFeatures&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRootHasFeatures/ModelRoot.PropertyDisplayName" xml:space="preserve">
+    <value>Features</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ModelRoot&apos; on DomainRelationship &apos;ModelRootHasFeatures&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRootHasFeatures/Feature.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.ModelRootHasFeatures.Feature</value>
+    <comment>Description for DomainRole &apos;Feature&apos; on DomainRelationship &apos;ModelRootHasFeatures&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRootHasFeatures/Feature.DisplayName" xml:space="preserve">
+    <value>Feature</value>
+    <comment>DisplayName for DomainRole &apos;Feature&apos; on DomainRelationship &apos;ModelRootHasFeatures&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRootHasFeatures/Feature.PropertyDisplayName" xml:space="preserve">
+    <value>Model Root</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Feature&apos; on DomainRelationship &apos;ModelRootHasFeatures&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRootHasDevices.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.ModelRootHasDevices</value>
+    <comment>Description for DomainClass &apos;ModelRootHasDevices&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRootHasDevices.DisplayName" xml:space="preserve">
+    <value>Model Root Has Devices</value>
+    <comment>DisplayName for DomainClass &apos;ModelRootHasDevices&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRootHasDevices/ModelRoot.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.ModelRootHasDevices.ModelRoot</value>
+    <comment>Description for DomainRole &apos;ModelRoot&apos; on DomainRelationship &apos;ModelRootHasDevices&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRootHasDevices/ModelRoot.DisplayName" xml:space="preserve">
+    <value>Model Root</value>
+    <comment>DisplayName for DomainRole &apos;ModelRoot&apos; on DomainRelationship &apos;ModelRootHasDevices&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRootHasDevices/ModelRoot.PropertyDisplayName" xml:space="preserve">
+    <value>Devices</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ModelRoot&apos; on DomainRelationship &apos;ModelRootHasDevices&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRootHasDevices/Device.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.ModelRootHasDevices.Device</value>
+    <comment>Description for DomainRole &apos;Device&apos; on DomainRelationship &apos;ModelRootHasDevices&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRootHasDevices/Device.DisplayName" xml:space="preserve">
+    <value>Device</value>
+    <comment>DisplayName for DomainRole &apos;Device&apos; on DomainRelationship &apos;ModelRootHasDevices&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ModelRootHasDevices/Device.PropertyDisplayName" xml:space="preserve">
+    <value>Model Root</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Device&apos; on DomainRelationship &apos;ModelRootHasDevices&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesSensor.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureReferencesSensor</value>
+    <comment>Description for DomainClass &apos;FeatureReferencesSensor&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesSensor.DisplayName" xml:space="preserve">
+    <value>Feature References Sensor</value>
+    <comment>DisplayName for DomainClass &apos;FeatureReferencesSensor&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesSensor/Feature.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureReferencesSensor.Feature</value>
+    <comment>Description for DomainRole &apos;Feature&apos; on DomainRelationship &apos;FeatureReferencesSensor&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesSensor/Feature.DisplayName" xml:space="preserve">
+    <value>Feature</value>
+    <comment>DisplayName for DomainRole &apos;Feature&apos; on DomainRelationship &apos;FeatureReferencesSensor&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesSensor/Feature.PropertyDisplayName" xml:space="preserve">
+    <value>Sensor</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Feature&apos; on DomainRelationship &apos;FeatureReferencesSensor&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesSensor/Device.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureReferencesSensor.Device</value>
+    <comment>Description for DomainRole &apos;Device&apos; on DomainRelationship &apos;FeatureReferencesSensor&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesSensor/Device.DisplayName" xml:space="preserve">
+    <value>Device</value>
+    <comment>DisplayName for DomainRole &apos;Device&apos; on DomainRelationship &apos;FeatureReferencesSensor&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesSensor/Device.PropertyDisplayName" xml:space="preserve">
+    <value>Has Sensor</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Device&apos; on DomainRelationship &apos;FeatureReferencesSensor&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesBrother.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureReferencesBrother</value>
+    <comment>Description for DomainClass &apos;FeatureReferencesBrother&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesBrother.DisplayName" xml:space="preserve">
+    <value>Feature References Brother</value>
+    <comment>DisplayName for DomainClass &apos;FeatureReferencesBrother&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesBrother/SourceFeature.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureReferencesBrother.SourceFeature</value>
+    <comment>Description for DomainRole &apos;SourceFeature&apos; on DomainRelationship &apos;FeatureReferencesBrother&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesBrother/SourceFeature.DisplayName" xml:space="preserve">
+    <value>Source Feature</value>
+    <comment>DisplayName for DomainRole &apos;SourceFeature&apos; on DomainRelationship &apos;FeatureReferencesBrother&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesBrother/SourceFeature.PropertyDisplayName" xml:space="preserve">
+    <value>Brother</value>
+    <comment>PropertyDisplayName for DomainRole &apos;SourceFeature&apos; on DomainRelationship &apos;FeatureReferencesBrother&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesBrother/TargetFeature.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureReferencesBrother.TargetFeature</value>
+    <comment>Description for DomainRole &apos;TargetFeature&apos; on DomainRelationship &apos;FeatureReferencesBrother&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesBrother/TargetFeature.DisplayName" xml:space="preserve">
+    <value>Target Feature</value>
+    <comment>DisplayName for DomainRole &apos;TargetFeature&apos; on DomainRelationship &apos;FeatureReferencesBrother&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesBrother/TargetFeature.PropertyDisplayName" xml:space="preserve">
+    <value>Has Brother</value>
+    <comment>PropertyDisplayName for DomainRole &apos;TargetFeature&apos; on DomainRelationship &apos;FeatureReferencesBrother&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesAlternatives.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureReferencesAlternatives</value>
+    <comment>Description for DomainClass &apos;FeatureReferencesAlternatives&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesAlternatives.DisplayName" xml:space="preserve">
+    <value>Feature References Alternatives</value>
+    <comment>DisplayName for DomainClass &apos;FeatureReferencesAlternatives&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesAlternatives/SourceFeature.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureReferencesAlternatives.SourceFeature</value>
+    <comment>Description for DomainRole &apos;SourceFeature&apos; on DomainRelationship &apos;FeatureReferencesAlternatives&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesAlternatives/SourceFeature.DisplayName" xml:space="preserve">
+    <value>Source Feature</value>
+    <comment>DisplayName for DomainRole &apos;SourceFeature&apos; on DomainRelationship &apos;FeatureReferencesAlternatives&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesAlternatives/SourceFeature.PropertyDisplayName" xml:space="preserve">
+    <value>Alternatives</value>
+    <comment>PropertyDisplayName for DomainRole &apos;SourceFeature&apos; on DomainRelationship &apos;FeatureReferencesAlternatives&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesAlternatives/TargetFeature.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureReferencesAlternatives.TargetFeature</value>
+    <comment>Description for DomainRole &apos;TargetFeature&apos; on DomainRelationship &apos;FeatureReferencesAlternatives&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesAlternatives/TargetFeature.DisplayName" xml:space="preserve">
+    <value>Target Feature</value>
+    <comment>DisplayName for DomainRole &apos;TargetFeature&apos; on DomainRelationship &apos;FeatureReferencesAlternatives&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureReferencesAlternatives/TargetFeature.PropertyDisplayName" xml:space="preserve">
+    <value>Source Features</value>
+    <comment>PropertyDisplayName for DomainRole &apos;TargetFeature&apos; on DomainRelationship &apos;FeatureReferencesAlternatives&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.CommentReferencesFeatures.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.CommentReferencesFeatures</value>
+    <comment>Description for DomainClass &apos;CommentReferencesFeatures&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.CommentReferencesFeatures.DisplayName" xml:space="preserve">
+    <value>Comment References Features</value>
+    <comment>DisplayName for DomainClass &apos;CommentReferencesFeatures&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.CommentReferencesFeatures/Comment.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.CommentReferencesFeatures.Comment</value>
+    <comment>Description for DomainRole &apos;Comment&apos; on DomainRelationship &apos;CommentReferencesFeatures&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.CommentReferencesFeatures/Comment.DisplayName" xml:space="preserve">
+    <value>Comment</value>
+    <comment>DisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;CommentReferencesFeatures&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.CommentReferencesFeatures/Comment.PropertyDisplayName" xml:space="preserve">
+    <value>Features</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;CommentReferencesFeatures&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.CommentReferencesFeatures/Feature.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.CommentReferencesFeatures.Feature</value>
+    <comment>Description for DomainRole &apos;Feature&apos; on DomainRelationship &apos;CommentReferencesFeatures&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.CommentReferencesFeatures/Feature.DisplayName" xml:space="preserve">
+    <value>Feature</value>
+    <comment>DisplayName for DomainRole &apos;Feature&apos; on DomainRelationship &apos;CommentReferencesFeatures&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.CommentReferencesFeatures/Feature.PropertyDisplayName" xml:space="preserve">
+    <value>Comments</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Feature&apos; on DomainRelationship &apos;CommentReferencesFeatures&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.AccessModifier/Public.DisplayName" xml:space="preserve">
+    <value>Public</value>
+    <comment>Display name for EnumerationLiteral &apos;Public&apos; on DomainEnumeration &apos;AccessModifier&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.AccessModifier/Public.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for EnumerationLiteral &apos;Public&apos; on DomainEnumeration &apos;AccessModifier&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.AccessModifier/Assembly.DisplayName" xml:space="preserve">
+    <value>Assembly</value>
+    <comment>Display name for EnumerationLiteral &apos;Assembly&apos; on DomainEnumeration &apos;AccessModifier&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.AccessModifier/Assembly.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for EnumerationLiteral &apos;Assembly&apos; on DomainEnumeration &apos;AccessModifier&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.AccessModifier/Private.DisplayName" xml:space="preserve">
+    <value>Private</value>
+    <comment>Display name for EnumerationLiteral &apos;Private&apos; on DomainEnumeration &apos;AccessModifier&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.AccessModifier/Private.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for EnumerationLiteral &apos;Private&apos; on DomainEnumeration &apos;AccessModifier&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.AccessModifier/Family.DisplayName" xml:space="preserve">
+    <value>Family</value>
+    <comment>Display name for EnumerationLiteral &apos;Family&apos; on DomainEnumeration &apos;AccessModifier&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.AccessModifier/Family.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for EnumerationLiteral &apos;Family&apos; on DomainEnumeration &apos;AccessModifier&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.AccessModifier/FamilyOrAssembly.DisplayName" xml:space="preserve">
+    <value>FamilyOrAssembly</value>
+    <comment>Display name for EnumerationLiteral &apos;FamilyOrAssembly&apos; on DomainEnumeration &apos;AccessModifier&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.AccessModifier/FamilyOrAssembly.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for EnumerationLiteral &apos;FamilyOrAssembly&apos; on DomainEnumeration &apos;AccessModifier&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.AccessModifier/FamilyAndAssembly.DisplayName" xml:space="preserve">
+    <value>FamilyAndAssembly</value>
+    <comment>Display name for EnumerationLiteral &apos;FamilyAndAssembly&apos; on DomainEnumeration &apos;AccessModifier&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.AccessModifier/FamilyAndAssembly.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for EnumerationLiteral &apos;FamilyAndAssembly&apos; on DomainEnumeration &apos;AccessModifier&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.TypeAccessModifier/Public.DisplayName" xml:space="preserve">
+    <value>Public</value>
+    <comment>Display name for EnumerationLiteral &apos;Public&apos; on DomainEnumeration &apos;TypeAccessModifier&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.TypeAccessModifier/Public.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for EnumerationLiteral &apos;Public&apos; on DomainEnumeration &apos;TypeAccessModifier&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.TypeAccessModifier/Private.DisplayName" xml:space="preserve">
+    <value>Private</value>
+    <comment>Display name for EnumerationLiteral &apos;Private&apos; on DomainEnumeration &apos;TypeAccessModifier&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.TypeAccessModifier/Private.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for EnumerationLiteral &apos;Private&apos; on DomainEnumeration &apos;TypeAccessModifier&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.InheritanceModifier/None.DisplayName" xml:space="preserve">
+    <value>None</value>
+    <comment>Display name for EnumerationLiteral &apos;None&apos; on DomainEnumeration &apos;InheritanceModifier&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.InheritanceModifier/None.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for EnumerationLiteral &apos;None&apos; on DomainEnumeration &apos;InheritanceModifier&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.InheritanceModifier/Abstract.DisplayName" xml:space="preserve">
+    <value>Abstract</value>
+    <comment>Display name for EnumerationLiteral &apos;Abstract&apos; on DomainEnumeration &apos;InheritanceModifier&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.InheritanceModifier/Abstract.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for EnumerationLiteral &apos;Abstract&apos; on DomainEnumeration &apos;InheritanceModifier&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.InheritanceModifier/Sealed.DisplayName" xml:space="preserve">
+    <value>Sealed</value>
+    <comment>Display name for EnumerationLiteral &apos;Sealed&apos; on DomainEnumeration &apos;InheritanceModifier&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.InheritanceModifier/Sealed.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for EnumerationLiteral &apos;Sealed&apos; on DomainEnumeration &apos;InheritanceModifier&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Multiplicity/ZeroMany.DisplayName" xml:space="preserve">
+    <value>ZeroMany</value>
+    <comment>Display name for EnumerationLiteral &apos;ZeroMany&apos; on DomainEnumeration &apos;Multiplicity&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Multiplicity/ZeroMany.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for EnumerationLiteral &apos;ZeroMany&apos; on DomainEnumeration &apos;Multiplicity&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Multiplicity/One.DisplayName" xml:space="preserve">
+    <value>One</value>
+    <comment>Display name for EnumerationLiteral &apos;One&apos; on DomainEnumeration &apos;Multiplicity&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Multiplicity/One.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for EnumerationLiteral &apos;One&apos; on DomainEnumeration &apos;Multiplicity&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Multiplicity/ZeroOne.DisplayName" xml:space="preserve">
+    <value>ZeroOne</value>
+    <comment>Display name for EnumerationLiteral &apos;ZeroOne&apos; on DomainEnumeration &apos;Multiplicity&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Multiplicity/ZeroOne.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for EnumerationLiteral &apos;ZeroOne&apos; on DomainEnumeration &apos;Multiplicity&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Multiplicity/OneMany.DisplayName" xml:space="preserve">
+    <value>OneMany</value>
+    <comment>Display name for EnumerationLiteral &apos;OneMany&apos; on DomainEnumeration &apos;Multiplicity&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Multiplicity/OneMany.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for EnumerationLiteral &apos;OneMany&apos; on DomainEnumeration &apos;Multiplicity&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.OperationConcurrency/Sequential.DisplayName" xml:space="preserve">
+    <value>Sequential</value>
+    <comment>Display name for EnumerationLiteral &apos;Sequential&apos; on DomainEnumeration &apos;OperationConcurrency&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.OperationConcurrency/Sequential.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for EnumerationLiteral &apos;Sequential&apos; on DomainEnumeration &apos;OperationConcurrency&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.OperationConcurrency/Guarded.DisplayName" xml:space="preserve">
+    <value>Guarded</value>
+    <comment>Display name for EnumerationLiteral &apos;Guarded&apos; on DomainEnumeration &apos;OperationConcurrency&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.OperationConcurrency/Guarded.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for EnumerationLiteral &apos;Guarded&apos; on DomainEnumeration &apos;OperationConcurrency&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.OperationConcurrency/Concurrent.DisplayName" xml:space="preserve">
+    <value>Concurrent</value>
+    <comment>Display name for EnumerationLiteral &apos;Concurrent&apos; on DomainEnumeration &apos;OperationConcurrency&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.OperationConcurrency/Concurrent.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for EnumerationLiteral &apos;Concurrent&apos; on DomainEnumeration &apos;OperationConcurrency&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ReturnType/BOOL.DisplayName" xml:space="preserve">
+    <value>BOOL</value>
+    <comment>Display name for EnumerationLiteral &apos;BOOL&apos; on DomainEnumeration &apos;ReturnType&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ReturnType/BOOL.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.ReturnType.BOOL</value>
+    <comment>Description for EnumerationLiteral &apos;BOOL&apos; on DomainEnumeration &apos;ReturnType&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ReturnType/INFO.DisplayName" xml:space="preserve">
+    <value>INFO</value>
+    <comment>Display name for EnumerationLiteral &apos;INFO&apos; on DomainEnumeration &apos;ReturnType&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ReturnType/INFO.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.ReturnType.INFO</value>
+    <comment>Description for EnumerationLiteral &apos;INFO&apos; on DomainEnumeration &apos;ReturnType&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ReturnType/RANGE.DisplayName" xml:space="preserve">
+    <value>RANGE</value>
+    <comment>Display name for EnumerationLiteral &apos;RANGE&apos; on DomainEnumeration &apos;ReturnType&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ReturnType/RANGE.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.ReturnType.RANGE</value>
+    <comment>Description for EnumerationLiteral &apos;RANGE&apos; on DomainEnumeration &apos;ReturnType&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureName/UserAirConditionerControl.DisplayName" xml:space="preserve">
+    <value>UserAirConditionerControl</value>
+    <comment>Display name for EnumerationLiteral &apos;UserAirConditionerControl&apos; on DomainEnumeration &apos;FeatureName&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureName/UserAirConditionerControl.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureName.UserAirConditionerControl</value>
+    <comment>Description for EnumerationLiteral &apos;UserAirConditionerControl&apos; on DomainEnumeration &apos;FeatureName&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureName/UserIlumination.DisplayName" xml:space="preserve">
+    <value>UserIlumination</value>
+    <comment>Display name for EnumerationLiteral &apos;UserIlumination&apos; on DomainEnumeration &apos;FeatureName&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureName/UserIlumination.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureName.UserIlumination</value>
+    <comment>Description for EnumerationLiteral &apos;UserIlumination&apos; on DomainEnumeration &apos;FeatureName&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureName/AutomatedIluminationByLuminosity.DisplayName" xml:space="preserve">
+    <value>AutomatedIluminationByLuminosity</value>
+    <comment>Display name for EnumerationLiteral &apos;AutomatedIluminationByLuminosity&apos; on DomainEnumeration &apos;FeatureName&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureName/AutomatedIluminationByLuminosity.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureName.AutomatedIluminationByLuminosity</value>
+    <comment>Description for EnumerationLiteral &apos;AutomatedIluminationByLuminosity&apos; on DomainEnumeration &apos;FeatureName&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureName/AutomatedWindowControl.DisplayName" xml:space="preserve">
+    <value>AutomatedWindowControl</value>
+    <comment>Display name for EnumerationLiteral &apos;AutomatedWindowControl&apos; on DomainEnumeration &apos;FeatureName&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureName/AutomatedWindowControl.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureName.AutomatedWindowControl</value>
+    <comment>Description for EnumerationLiteral &apos;AutomatedWindowControl&apos; on DomainEnumeration &apos;FeatureName&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureName/AutomatedIluminationByPresence.DisplayName" xml:space="preserve">
+    <value>AutomatedIluminationByPresence</value>
+    <comment>Display name for EnumerationLiteral &apos;AutomatedIluminationByPresence&apos; on DomainEnumeration &apos;FeatureName&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureName/AutomatedIluminationByPresence.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureName.AutomatedIluminationByPresence</value>
+    <comment>Description for EnumerationLiteral &apos;AutomatedIluminationByPresence&apos; on DomainEnumeration &apos;FeatureName&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureName/PresenceIlusion.DisplayName" xml:space="preserve">
+    <value>PresenceIlusion</value>
+    <comment>Display name for EnumerationLiteral &apos;PresenceIlusion&apos; on DomainEnumeration &apos;FeatureName&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureName/PresenceIlusion.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureName.PresenceIlusion</value>
+    <comment>Description for EnumerationLiteral &apos;PresenceIlusion&apos; on DomainEnumeration &apos;FeatureName&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureName/AutomatedAirConditionerControl.DisplayName" xml:space="preserve">
+    <value>AutomatedAirConditionerControl</value>
+    <comment>Display name for EnumerationLiteral &apos;AutomatedAirConditionerControl&apos; on DomainEnumeration &apos;FeatureName&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureName/AutomatedAirConditionerControl.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureName.AutomatedAirConditionerControl</value>
+    <comment>Description for EnumerationLiteral &apos;AutomatedAirConditionerControl&apos; on DomainEnumeration &apos;FeatureName&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureName/UserWindowControl.DisplayName" xml:space="preserve">
+    <value>UserWindowControl</value>
+    <comment>Display name for EnumerationLiteral &apos;UserWindowControl&apos; on DomainEnumeration &apos;FeatureName&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureName/UserWindowControl.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureName.UserWindowControl</value>
+    <comment>Description for EnumerationLiteral &apos;UserWindowControl&apos; on DomainEnumeration &apos;FeatureName&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureName/PanicMode.DisplayName" xml:space="preserve">
+    <value>PanicMode</value>
+    <comment>Display name for EnumerationLiteral &apos;PanicMode&apos; on DomainEnumeration &apos;FeatureName&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureName/PanicMode.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureName.PanicMode</value>
+    <comment>Description for EnumerationLiteral &apos;PanicMode&apos; on DomainEnumeration &apos;FeatureName&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureName/AlarmAgainstRobbery.DisplayName" xml:space="preserve">
+    <value>AlarmAgainstRobbery</value>
+    <comment>Display name for EnumerationLiteral &apos;AlarmAgainstRobbery&apos; on DomainEnumeration &apos;FeatureName&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureName/AlarmAgainstRobbery.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureName.AlarmAgainstRobbery</value>
+    <comment>Description for EnumerationLiteral &apos;AlarmAgainstRobbery&apos; on DomainEnumeration &apos;FeatureName&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureName/LockDoors.DisplayName" xml:space="preserve">
+    <value>LockDoors</value>
+    <comment>Display name for EnumerationLiteral &apos;LockDoors&apos; on DomainEnumeration &apos;FeatureName&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureName/LockDoors.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureName.LockDoors</value>
+    <comment>Description for EnumerationLiteral &apos;LockDoors&apos; on DomainEnumeration &apos;FeatureName&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.DeviceType/Actuator.DisplayName" xml:space="preserve">
+    <value>Actuator</value>
+    <comment>Display name for EnumerationLiteral &apos;Actuator&apos; on DomainEnumeration &apos;DeviceType&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.DeviceType/Actuator.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.DeviceType.Actuator</value>
+    <comment>Description for EnumerationLiteral &apos;Actuator&apos; on DomainEnumeration &apos;DeviceType&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.DeviceType/Sensor.DisplayName" xml:space="preserve">
+    <value>Sensor</value>
+    <comment>Display name for EnumerationLiteral &apos;Sensor&apos; on DomainEnumeration &apos;DeviceType&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.DeviceType/Sensor.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.DeviceType.Sensor</value>
+    <comment>Description for EnumerationLiteral &apos;Sensor&apos; on DomainEnumeration &apos;DeviceType&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureType/OR.DisplayName" xml:space="preserve">
+    <value>OR</value>
+    <comment>Display name for EnumerationLiteral &apos;OR&apos; on DomainEnumeration &apos;FeatureType&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureType/OR.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureType.OR</value>
+    <comment>Description for EnumerationLiteral &apos;OR&apos; on DomainEnumeration &apos;FeatureType&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureType/Mandatory.DisplayName" xml:space="preserve">
+    <value>Mandatory</value>
+    <comment>Display name for EnumerationLiteral &apos;Mandatory&apos; on DomainEnumeration &apos;FeatureType&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureType/Mandatory.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureType.Mandatory</value>
+    <comment>Description for EnumerationLiteral &apos;Mandatory&apos; on DomainEnumeration &apos;FeatureType&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureType/Alternative.DisplayName" xml:space="preserve">
+    <value>Alternative</value>
+    <comment>Display name for EnumerationLiteral &apos;Alternative&apos; on DomainEnumeration &apos;FeatureType&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureType/Alternative.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureType.Alternative</value>
+    <comment>Description for EnumerationLiteral &apos;Alternative&apos; on DomainEnumeration &apos;FeatureType&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureType/Optional.DisplayName" xml:space="preserve">
+    <value>Optional</value>
+    <comment>Display name for EnumerationLiteral &apos;Optional&apos; on DomainEnumeration &apos;FeatureType&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureType/Optional.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureType.Optional</value>
+    <comment>Description for EnumerationLiteral &apos;Optional&apos; on DomainEnumeration &apos;FeatureType&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.CommentBoxShape.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainClass &apos;CommentBoxShape&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.CommentBoxShape.DisplayName" xml:space="preserve">
+    <value>Comment Box Shape</value>
+    <comment>DisplayName for DomainClass &apos;CommentBoxShape&apos;</comment>
+  </data>
+  <data name="CommentBoxShapeCommentDefaultText" xml:space="preserve">
+    <value>BusinessRulesShapeNameDecorator</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureShape.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FeatureShape</value>
+    <comment>Description for DomainClass &apos;FeatureShape&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.FeatureShape.DisplayName" xml:space="preserve">
+    <value>Feature Shape</value>
+    <comment>DisplayName for DomainClass &apos;FeatureShape&apos;</comment>
+  </data>
+  <data name="FeatureShapeNameDefaultText" xml:space="preserve">
+    <value>Name</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="FeatureShapeSerialDefaultText" xml:space="preserve">
+    <value>Serial</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="FeatureShapeFeatureTypeDefaultText" xml:space="preserve">
+    <value>FeatureType</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Ufba.vShome.DeviceShape.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.DeviceShape</value>
+    <comment>Description for DomainClass &apos;DeviceShape&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.DeviceShape.DisplayName" xml:space="preserve">
+    <value>Device Shape</value>
+    <comment>DisplayName for DomainClass &apos;DeviceShape&apos;</comment>
+  </data>
+  <data name="DeviceShapeNameDefaultText" xml:space="preserve">
+    <value>Name</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="DeviceShapeReturnTypeDefaultText" xml:space="preserve">
+    <value>ReturnType</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="DeviceShapeDeviceTypeDefaultText" xml:space="preserve">
+    <value>DeviceType</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Ufba.vShome.ActuatorConnector.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.ActuatorConnector</value>
+    <comment>Description for DomainClass &apos;ActuatorConnector&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.ActuatorConnector.DisplayName" xml:space="preserve">
+    <value>Actuator Connector</value>
+    <comment>DisplayName for DomainClass &apos;ActuatorConnector&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Father.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.Father</value>
+    <comment>Description for DomainClass &apos;Father&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Father.DisplayName" xml:space="preserve">
+    <value>Father</value>
+    <comment>DisplayName for DomainClass &apos;Father&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Brother.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.Brother</value>
+    <comment>Description for DomainClass &apos;Brother&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Brother.DisplayName" xml:space="preserve">
+    <value>Brother</value>
+    <comment>DisplayName for DomainClass &apos;Brother&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Alternative.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.Alternative</value>
+    <comment>Description for DomainClass &apos;Alternative&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Alternative.DisplayName" xml:space="preserve">
+    <value>Alternative</value>
+    <comment>DisplayName for DomainClass &apos;Alternative&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Sensor.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.Sensor</value>
+    <comment>Description for DomainClass &apos;Sensor&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.Sensor.DisplayName" xml:space="preserve">
+    <value>Sensor</value>
+    <comment>DisplayName for DomainClass &apos;Sensor&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.CommentLink.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.CommentLink</value>
+    <comment>Description for DomainClass &apos;CommentLink&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.CommentLink.DisplayName" xml:space="preserve">
+    <value>Comment Link</value>
+    <comment>DisplayName for DomainClass &apos;CommentLink&apos;</comment>
+  </data>
+  <data name="FormatList" xml:space="preserve">
+    <value>Class Diagrams (*.visSHome)|*.visSHome</value>
+    <comment>A list of file format specifiers for the Save dialog box</comment>
+  </data>
+  <data name="ModelExplorerTitle" xml:space="preserve">
+    <value>Class Diagrams Explorer</value>
+    <comment>Model Explorer Toolwindow title</comment>
+  </data>
+  <data name="Ufba.vShome.vShomeDiagram.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainClass &apos;vShomeDiagram&apos;</comment>
+  </data>
+  <data name="Ufba.vShome.vShomeDiagram.DisplayName" xml:space="preserve">
+    <value>Class Diagram</value>
+    <comment>DisplayName for DomainClass &apos;vShomeDiagram&apos;</comment>
+  </data>
+  <data name="Class DiagramsToolboxTab" xml:space="preserve">
+    <value>Class Diagrams</value>
+    <comment>Toolbox item tab name</comment>
+  </data>
+  <data name="CommentToolboxItem" xml:space="preserve">
+    <value>Comment</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="CommentToolboxTooltip" xml:space="preserve">
+    <value>Create a Comment</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="DeviceToolboxItem" xml:space="preserve">
+    <value>Device</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="DeviceToolboxTooltip" xml:space="preserve">
+    <value>Device</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="FeatureToolboxItem" xml:space="preserve">
+    <value>Feature</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="FeatureToolboxTooltip" xml:space="preserve">
+    <value>Feature</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="FatherToolboxItem" xml:space="preserve">
+    <value>Father</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="FatherToolboxTooltip" xml:space="preserve">
+    <value>Father</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="ActuatorToolboxItem" xml:space="preserve">
+    <value>Actuator</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="ActuatorToolboxTooltip" xml:space="preserve">
+    <value>Actuator</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="SensorToolboxItem" xml:space="preserve">
+    <value>Sensor</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="SensorToolboxTooltip" xml:space="preserve">
+    <value>Sensor</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="AlternativeToolboxItem" xml:space="preserve">
+    <value>Alternative</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="AlternativeToolboxTooltip" xml:space="preserve">
+    <value>Alternative</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="BrotherToolboxItem" xml:space="preserve">
+    <value>Brother</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="BrotherToolboxTooltip" xml:space="preserve">
+    <value>Brother</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="CommentLinkToolboxItem" xml:space="preserve">
+    <value>CommentLink</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="CommentLinkToolboxTooltip" xml:space="preserve">
+    <value>Comment Link</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="UnresolvedToolboxItem" xml:space="preserve">
+    <value>ToolboxItem {0} was not found</value>
+    <comment>Invalid toolId</comment>
+  </data>
+  <data name="UnsupportedToolboxFormat" xml:space="preserve">
+    <value>Unsupported toolbox format: {0}</value>
+    <comment>Unsupported format Id</comment>
+  </data>
+  <data name="UnrecognizedElementType" xml:space="preserve">
+    <value>ElementType {0} is not recognized as a type of domain class which belongs to this domain model.</value>
+    <comment>Incorrect ElementType passed in to Model.CreateElement method</comment>
+  </data>
+  <data name="UnrecognizedElementLinkType" xml:space="preserve">
+    <value>ElementLinkType {0} is not recognized as a type of domain relationship which belongs to this domain model.</value>
+    <comment>Incorrect ElementLinkType passed in to Model.CreateElementLink method</comment>
+  </data>
+  <data name="AmbiguousSchema" xml:space="preserve">
+    <value>More than one schema found for target namespace &apos;{0}&apos;, use the first one at &apos;{1}&apos;.</value>
+    <comment>Serialization Warning: AmbiguousSchema</comment>
+  </data>
+  <data name="ExpectingFullFormRelationship" xml:space="preserve">
+    <value>Element &apos;{0}&apos; is treated as the target role-player of a relationship &apos;{1}&apos; instance, which should be serialized in full-form.</value>
+    <comment>Serialization Warning: ExpectingFullFormRelationship</comment>
+  </data>
+  <data name="ExpectingShortFormRelationship" xml:space="preserve">
+    <value>Instances of relationship &apos;{0}&apos; should be serialized in short-form.</value>
+    <comment>Serialization Warning: ExpectingShortFormRelationship</comment>
+  </data>
+  <data name="IgnoredPropertyValue" xml:space="preserve">
+    <value>Invalid property value &apos;{0}&apos; for property &apos;{1}&apos; with type &apos;{2}&apos;, ignored.</value>
+    <comment>Serialization Warning: IgnoredPropertyValue</comment>
+  </data>
+  <data name="MissingId" xml:space="preserve">
+    <value>Missing &apos;Id&apos; attribute, a new Guid &apos;{0}&apos; is auto-generated.</value>
+    <comment>Serialization Warning: MissingId</comment>
+  </data>
+  <data name="MonikerResolvedToDuplicateLink" xml:space="preserve">
+    <value>Resolving moniker &apos;{0}&apos; causes a duplicate link to be created, so the link and the moniker are ignored.</value>
+    <comment>Serialization Warning: MonikerResolvedToDuplicateLink</comment>
+  </data>
+  <data name="NoSchema" xml:space="preserve">
+    <value>Cannot find a schema that defines target namespace &apos;{0}&apos;, schema validation skipped.</value>
+    <comment>Serialization Warning: NoSchema</comment>
+  </data>
+  <data name="UnexpectedXmlElement" xml:space="preserve">
+    <value>Unexpected XML element &apos;{0}&apos;, ignored.</value>
+    <comment>Serialization Warning: UnexpectedXmlElement</comment>
+  </data>
+  <data name="AmbiguousMoniker" xml:space="preserve">
+    <value>Ambiguous moniker &apos;{0}&apos; encountered. It is used for both &apos;{1}&apos; and &apos;{2}&apos;.</value>
+    <comment>Serialization Error: AmbiguousMoniker</comment>
+  </data>
+  <data name="CannotMonikerizeElement" xml:space="preserve">
+    <value>Instances of DomainClass &apos;{0}&apos; cannot be serialized as a moniker.
+A DomainClass can be serialized as a moniker only if 
+1) it has a defined/inherited DomainProperty marked as IsMonikerKey=true, or 
+2) it is marked/inherited with SerializeId=true.</value>
+    <comment>Serialization Error: CannotMonikerizeElement</comment>
+  </data>
+  <data name="CannotOpenDocument" xml:space="preserve">
+    <value>Error encountered, check Error List window for details.</value>
+    <comment>Serialization Error: CannotOpenDocument</comment>
+  </data>
+  <data name="CannotSaveDocument" xml:space="preserve">
+    <value>Error encountered, check Error List window for details.</value>
+    <comment>Serialization Error: CannotSaveDocument</comment>
+  </data>
+  <data name="DanglingRelationship" xml:space="preserve">
+    <value>Relationship &apos;{0}&apos; instance is missing target role-player.</value>
+    <comment>Serialization Error: DanglingRelationship</comment>
+  </data>
+  <data name="InvalidPropertyValue" xml:space="preserve">
+    <value>Invalid property value &apos;{0}&apos; for property &apos;{1}&apos; with type &apos;{2}&apos;.</value>
+    <comment>Serialization Error: InvalidPropertyValue</comment>
+  </data>
+  <data name="MissingMoniker" xml:space="preserve">
+    <value>Missing moniker. A moniker is expected in attribute &apos;{0}&apos;.</value>
+    <comment>Serialization Error: MissingMoniker</comment>
+  </data>
+  <data name="MissingTransaction" xml:space="preserve">
+    <value>This must be called within the context of an active transaction.</value>
+    <comment>Serialization Error: MissingTransaction</comment>
+  </data>
+  <data name="UnresolvedMoniker" xml:space="preserve">
+    <value>Cannot resolve moniker &apos;{0}&apos;.</value>
+    <comment>Serialization Error: UnresolvedMoniker</comment>
+  </data>
+  <data name="VersionMismatch" xml:space="preserve">
+    <value>Unsupported version &apos;{0}&apos;, can only support &apos;{1}&apos;.</value>
+    <comment>Serialization Error: VersionMismatch</comment>
+  </data>
+  <data name="CannotCloseExistingDiagramDocument" xml:space="preserve">
+    <value>Diagram file &apos;{0}&apos; cannot be closed.</value>
+    <comment>User cancel closing diagram file. Hence, the DSL model file cannot be opened</comment>
+  </data>
+  <data name="BindingErrorOccurred" xml:space="preserve">
+    <value>Extensions for this designer may not be found as a MEF binding error has occurred. The error that occurred was:
+{0}</value>
+    <comment>MEF binding error occurred - exception message being logged in the error window so the user is aware.</comment>
+  </data>
+  <data name="InvalidSaveRootElementType" xml:space="preserve">
+    <value>&apos;{0}&apos; is not a valid root element type.</value>
+    <comment>Exception message used if an invalid root element type is passed to IDomainModelSerializer.SaveModel / SaveModelAndDiagram</comment>
+  </data>
+  <data name="InvalidSaveDiagramType" xml:space="preserve">
+    <value>&apos;{0}&apos; is not a valid diagram type.</value>
+    <comment>Exception message used if an invalid diagram type is passed to IDomainModelSerializer.SaveModelAndDiagram</comment>
+  </data>
+  <data name="MinimumMultiplicityMissingLink" xml:space="preserve">
+    <value>{0} {1} has no {2}.</value>
+    <comment>Multiplicity underflow validation.</comment>
+  </data>
+  <data name="SaveOperationCancelled" xml:space="preserve">
+    <value>Save operation cancelled.</value>
+    <comment>Message when save is cancelled on validation errors</comment>
+  </data>
+  <data name="SaveValidationFailed" xml:space="preserve">
+    <value>There were validation errors, continue save?</value>
+    <comment>Message when validation errors are found on save</comment>
+  </data>
+  <data name="UnloadableSaveValidationFailed" xml:space="preserve">
+    <value>There were validation errors. Continuing to save may cause the file to become unloadable, do you want to continue?</value>
+    <comment>Message when validation errors are found on save that will cause file to become unloadable</comment>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CommentToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\resources\commenttool.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="DeviceToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ElementToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="FeatureToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ClassTool.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="FatherToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\GeneralizationTool.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="ActuatorToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\MessageTool.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="SensorToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ImplementationTool.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="AlternativeToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\AggregationTool.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="BrotherToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\UnidirectionTool.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="CommentLinkToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\CommentLinkTool.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+</root>
+
+

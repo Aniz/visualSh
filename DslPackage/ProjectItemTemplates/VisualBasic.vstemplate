@@ -1,0 +1,17 @@
+﻿<!--DSL Tools Language Template-->
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TemplateData>
+		<TemplateID>{6c58369d-5c39-4781-ac45-be91e87ab171}</TemplateID>
+		<Name Package="{c52771ae-c860-4014-befb-d1c7766f19f9}" ID="103"/>
+		<Description Package="{c52771ae-c860-4014-befb-d1c7766f19f9}" ID="102"/>
+		<Icon Package="{c52771ae-c860-4014-befb-d1c7766f19f9}" ID="201" />
+		<ProjectType>VisualBasic</ProjectType>
+		<SortOrder>360</SortOrder>
+		<DefaultName>vShome.visSHome</DefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectItem TargetFileName="$fileinputname$.visSHome">visSHome.visSHome</ProjectItem>
+		<ProjectItem TargetFileName="$fileinputname$.visSHome.diagram">visSHome.diagram</ProjectItem>
+	</TemplateContent>
+</VSTemplate>
+

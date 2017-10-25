@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<vShomeDiagram dslVersion="1.0.0.0" Id="d99addde-6a45-478c-92a4-80e83c0c5a97" absoluteBounds="0, 0, 11, 8.5" name="Test">
+  <modelRootMoniker Id="1ae75111-e23e-45af-ad5c-a05743453470" />
+  <nestedChildShapes>
+    <deviceShape Id="cfad6e8c-ee91-4ae7-8f27-886182628863" absoluteBounds="0.5, 3.875, 1.5, 0.5">
+      <deviceMoniker Id="6901cb10-5b5d-4250-b319-ef7d2df7a739" />
+    </deviceShape>
+    <deviceShape Id="907b245b-c342-4e16-9af4-aa11d49da8cd" absoluteBounds="0.5, 0.5, 1.5, 0.5">
+      <deviceMoniker Id="c57a8b3e-eda1-4c2d-9b00-d4bcfff56925" />
+    </deviceShape>
+    <deviceShape Id="d6994e8b-6e60-456a-a2c6-8ec1716bdd54" absoluteBounds="2.375, 3.875, 1.5, 0.5">
+      <deviceMoniker Id="67a6f7ca-ad5c-4e77-8689-bacc749dc0c1" />
+    </deviceShape>
+    <deviceShape Id="5770c543-ea77-4534-b733-96615dd2e1b1" absoluteBounds="4.25, 3.875, 1.5, 0.5">
+      <deviceMoniker Id="3991b3a9-298f-4d9c-8404-7167c160b717" />
+    </deviceShape>
+    <deviceShape Id="4ea7c373-9200-416a-b73c-bc23ec00decd" absoluteBounds="2.25, 0.5, 1.5, 0.5">
+      <deviceMoniker Id="b16916d4-af36-4233-ab2f-2761c663aec3" />
+    </deviceShape>
+    <featureShape Id="80bb1b65-e254-4fc0-b775-9488a5204d41" absoluteBounds="0.625, 1.375, 1.5, 0.75">
+      <featureMoniker Id="e3e993a9-41d3-4a6e-9191-a947901677bd" />
+    </featureShape>
+  </nestedChildShapes>
+</vShomeDiagram>
