@@ -2,23 +2,199 @@
 <vShomeDiagram dslVersion="1.0.0.0" Id="d99addde-6a45-478c-92a4-80e83c0c5a97" absoluteBounds="0, 0, 11, 8.5" name="Test">
   <modelRootMoniker Id="1ae75111-e23e-45af-ad5c-a05743453470" />
   <nestedChildShapes>
-    <deviceShape Id="cfad6e8c-ee91-4ae7-8f27-886182628863" absoluteBounds="0.5, 3.875, 1.5, 0.5">
+    <deviceShape Id="cfad6e8c-ee91-4ae7-8f27-886182628863" absoluteBounds="2.125, 6.875, 1.5, 0.5">
       <deviceMoniker Id="6901cb10-5b5d-4250-b319-ef7d2df7a739" />
     </deviceShape>
     <deviceShape Id="907b245b-c342-4e16-9af4-aa11d49da8cd" absoluteBounds="0.5, 0.5, 1.5, 0.5">
       <deviceMoniker Id="c57a8b3e-eda1-4c2d-9b00-d4bcfff56925" />
     </deviceShape>
-    <deviceShape Id="d6994e8b-6e60-456a-a2c6-8ec1716bdd54" absoluteBounds="2.375, 3.875, 1.5, 0.5">
+    <deviceShape Id="d6994e8b-6e60-456a-a2c6-8ec1716bdd54" absoluteBounds="5.875, 6.75, 1.5, 0.5">
       <deviceMoniker Id="67a6f7ca-ad5c-4e77-8689-bacc749dc0c1" />
     </deviceShape>
-    <deviceShape Id="5770c543-ea77-4534-b733-96615dd2e1b1" absoluteBounds="4.25, 3.875, 1.5, 0.5">
+    <deviceShape Id="5770c543-ea77-4534-b733-96615dd2e1b1" absoluteBounds="4.375, 3.375, 1.5, 0.5">
       <deviceMoniker Id="3991b3a9-298f-4d9c-8404-7167c160b717" />
     </deviceShape>
     <deviceShape Id="4ea7c373-9200-416a-b73c-bc23ec00decd" absoluteBounds="2.25, 0.5, 1.5, 0.5">
       <deviceMoniker Id="b16916d4-af36-4233-ab2f-2761c663aec3" />
     </deviceShape>
-    <featureShape Id="80bb1b65-e254-4fc0-b775-9488a5204d41" absoluteBounds="0.625, 1.375, 1.5, 0.75">
+    <featureShape Id="80bb1b65-e254-4fc0-b775-9488a5204d41" absoluteBounds="0.5, 1.375, 1.5, 0.75">
       <featureMoniker Id="e3e993a9-41d3-4a6e-9191-a947901677bd" />
     </featureShape>
+    <featureShape Id="76eed805-0bac-4955-ada5-32faf0b06ac1" absoluteBounds="0.5, 2.625, 1.5, 0.75">
+      <featureMoniker Id="83b60ac9-7684-4ad2-bb43-0cfb74442dcb" />
+    </featureShape>
+    <featureShape Id="4d925f9a-ad43-4cf5-91e5-bce9f22d6571" absoluteBounds="2.375, 1.375, 1.5, 0.75">
+      <featureMoniker Id="c696a451-8a6e-41f6-8694-32fd346af0ae" />
+    </featureShape>
+    <featureShape Id="6fc54d7b-5410-4762-81a7-6bf14fd1aa54" absoluteBounds="2.375, 2.625, 1.5, 0.75">
+      <featureMoniker Id="3c06e43e-954d-4fa6-8efc-18e113941364" />
+    </featureShape>
+    <father Id="48e6eb3d-0b2b-426f-a436-f095269cc1b9" edgePoints="[(1.25 : 2.625); (1.25 : 2.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <featureReferencesFatherMoniker Id="ab433c8c-12e7-47cd-a2ee-fff09d2b4539" />
+      <nodes>
+        <featureShapeMoniker Id="76eed805-0bac-4955-ada5-32faf0b06ac1" />
+        <featureShapeMoniker Id="80bb1b65-e254-4fc0-b775-9488a5204d41" />
+      </nodes>
+    </father>
+    <father Id="bb2828a2-5cd5-4eb3-84fd-e726a5d8c9ad" edgePoints="[(3.125 : 2.625); (3.125 : 2.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <featureReferencesFatherMoniker Id="4fe1d613-9c59-40df-b42e-4e736a803272" />
+      <nodes>
+        <featureShapeMoniker Id="6fc54d7b-5410-4762-81a7-6bf14fd1aa54" />
+        <featureShapeMoniker Id="4d925f9a-ad43-4cf5-91e5-bce9f22d6571" />
+      </nodes>
+    </father>
+    <actuatorConnector Id="440e4db1-e421-4086-9c83-4d0919c315f8" edgePoints="[(1.25 : 1.375); (1.25 : 1)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <featureReferencesActuatorMoniker Id="c6987acb-0780-4a78-b150-cc6e8cfb8677" />
+      <nodes>
+        <featureShapeMoniker Id="80bb1b65-e254-4fc0-b775-9488a5204d41" />
+        <deviceShapeMoniker Id="907b245b-c342-4e16-9af4-aa11d49da8cd" />
+      </nodes>
+    </actuatorConnector>
+    <actuatorConnector Id="8be2d5f8-86b0-4a5c-9aab-134024ed9848" edgePoints="[(0.5 : 3); (0.125 : 3); (0.125 : 0.75); (0.5 : 0.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <featureReferencesActuatorMoniker Id="d2345b33-496a-480f-87bd-98b9e171ddba" />
+      <nodes>
+        <featureShapeMoniker Id="76eed805-0bac-4955-ada5-32faf0b06ac1" />
+        <deviceShapeMoniker Id="907b245b-c342-4e16-9af4-aa11d49da8cd" />
+      </nodes>
+    </actuatorConnector>
+    <actuatorConnector Id="c93ec68d-c783-49ad-8850-8c33e2075210" edgePoints="[(3.0625 : 1.375); (3.0625 : 1)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <featureReferencesActuatorMoniker Id="ab09889f-a559-40d4-8bc1-d78104e68dca" />
+      <nodes>
+        <featureShapeMoniker Id="4d925f9a-ad43-4cf5-91e5-bce9f22d6571" />
+        <deviceShapeMoniker Id="4ea7c373-9200-416a-b73c-bc23ec00decd" />
+      </nodes>
+    </actuatorConnector>
+    <actuatorConnector Id="9f23dd15-127f-490e-9cc2-5db8231cf85a" edgePoints="[(3.125 : 2.625); (3.125 : 2.375); (4.125 : 2.375); (4.125 : 0.75); (3.75 : 0.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <featureReferencesActuatorMoniker Id="77bc7b0c-2b7b-4a53-bb81-87598541fd8f" />
+      <nodes>
+        <featureShapeMoniker Id="6fc54d7b-5410-4762-81a7-6bf14fd1aa54" />
+        <deviceShapeMoniker Id="4ea7c373-9200-416a-b73c-bc23ec00decd" />
+      </nodes>
+    </actuatorConnector>
+    <alternative Id="57c9db45-344a-4704-b133-30c18f5f8b43" edgePoints="[(2 : 3); (2.375 : 3)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <featureReferencesAlternativesMoniker Id="f1770c57-9a6d-4977-b4da-53bbb5b6859a" />
+      <nodes>
+        <featureShapeMoniker Id="76eed805-0bac-4955-ada5-32faf0b06ac1" />
+        <featureShapeMoniker Id="6fc54d7b-5410-4762-81a7-6bf14fd1aa54" />
+      </nodes>
+    </alternative>
+    <featureShape Id="44915d36-f9d1-4d14-aea1-9a9528678bd2" absoluteBounds="2.125, 4.375, 1.5, 0.75">
+      <featureMoniker Id="4f00cdd8-8529-4cc0-8d5f-b0cbeaef79b5" />
+    </featureShape>
+    <featureShape Id="8e7e4205-9823-44f7-b295-e7e2b0e0189f" absoluteBounds="2.125, 5.5, 1.5, 0.75">
+      <featureMoniker Id="d0230537-47e4-40db-8f9b-d5f1aee435f1" />
+    </featureShape>
+    <featureShape Id="80a7f47f-22ea-4549-a36e-9bb2905766a3" absoluteBounds="4.375, 2.375, 1.5, 0.75">
+      <featureMoniker Id="419f0597-8dd6-495c-8f5c-f84f53c07e72" />
+    </featureShape>
+    <featureShape Id="adb7bbea-a235-4e79-bd7f-c8da96b9cfbc" absoluteBounds="5.75, 4.375, 1.5, 0.75">
+      <featureMoniker Id="abd46616-e16a-4495-8b94-0371f7b552a5" />
+    </featureShape>
+    <featureShape Id="83600c0f-f5a8-4052-b798-f5df59d3fc77" absoluteBounds="6.125, 2.375, 1.5, 0.75">
+      <featureMoniker Id="78fa2e12-6d18-439b-a9e7-4a010fd200d3" />
+    </featureShape>
+    <deviceShape Id="a3673698-4b7f-4121-8a18-43295f5ce5da" absoluteBounds="0.5, 3.875, 1.5, 0.5">
+      <deviceMoniker Id="263e99c7-7641-473c-94db-fed36e3cb3f6" />
+    </deviceShape>
+    <sensor Id="a167bd17-6adb-4b99-a3a2-da032b4f46ac" edgePoints="[(1.25 : 3.375); (1.25 : 3.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <featureReferencesSensorMoniker Id="0d36c8bf-094a-4f3d-89b8-6d42a5f37ec5" />
+      <nodes>
+        <featureShapeMoniker Id="76eed805-0bac-4955-ada5-32faf0b06ac1" />
+        <deviceShapeMoniker Id="a3673698-4b7f-4121-8a18-43295f5ce5da" />
+      </nodes>
+    </sensor>
+    <deviceShape Id="4c247607-3415-4a32-a69e-b1cf4e5a85f6" absoluteBounds="6.125, 3.375, 1.5, 0.5">
+      <deviceMoniker Id="2bb43d43-ab62-4fcf-9d05-2a88f1d8ffc7" />
+    </deviceShape>
+    <actuatorConnector Id="e5d4cf5f-b2c3-4228-942e-5abcb3374f7b" edgePoints="[(5.125 : 3.125); (5.125 : 3.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <featureReferencesActuatorMoniker Id="16117458-144b-4802-bb65-f6a47e8d814c" />
+      <nodes>
+        <featureShapeMoniker Id="80a7f47f-22ea-4549-a36e-9bb2905766a3" />
+        <deviceShapeMoniker Id="5770c543-ea77-4534-b733-96615dd2e1b1" />
+      </nodes>
+    </actuatorConnector>
+    <actuatorConnector Id="adee1e29-4574-414d-bb02-76c904aea1f3" edgePoints="[(6.875 : 3.125); (6.875 : 3.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <featureReferencesActuatorMoniker Id="f11ec2ef-a977-456a-bb4d-1c98e33f7801" />
+      <nodes>
+        <featureShapeMoniker Id="83600c0f-f5a8-4052-b798-f5df59d3fc77" />
+        <deviceShapeMoniker Id="4c247607-3415-4a32-a69e-b1cf4e5a85f6" />
+      </nodes>
+    </actuatorConnector>
+    <father Id="d8df1a30-d1f5-43c1-a498-7025332cca96" edgePoints="[(2.875 : 5.5); (2.875 : 5.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <featureReferencesFatherMoniker Id="f25be650-30f4-4b64-b7c6-497594598d15" />
+      <nodes>
+        <featureShapeMoniker Id="8e7e4205-9823-44f7-b295-e7e2b0e0189f" />
+        <featureShapeMoniker Id="44915d36-f9d1-4d14-aea1-9a9528678bd2" />
+      </nodes>
+    </father>
+    <featureShape Id="1e6de2d1-f373-4d99-99eb-99cf4501e014" absoluteBounds="5.75, 5.625, 1.5, 0.75">
+      <featureMoniker Id="9ca5a569-17a3-4505-b1cd-2a166f38d821" />
+    </featureShape>
+    <father Id="d6e0f89d-8a0d-4192-b4c7-dcca492c8c3c" edgePoints="[(6.5 : 5.625); (6.5 : 5.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <featureReferencesFatherMoniker Id="a22f194e-ea35-4231-8cc3-e0ec45007a67" />
+      <nodes>
+        <featureShapeMoniker Id="1e6de2d1-f373-4d99-99eb-99cf4501e014" />
+        <featureShapeMoniker Id="adb7bbea-a235-4e79-bd7f-c8da96b9cfbc" />
+      </nodes>
+    </father>
+    <deviceShape Id="b8ffac94-dff7-42b0-827f-82d6268cdbcf" absoluteBounds="4, 5.375, 1.5, 0.5">
+      <deviceMoniker Id="c9e417cc-5364-471a-9a7f-5e7f7ddd6292" />
+    </deviceShape>
+    <sensor Id="e3a69a8a-82e2-4b09-a765-e071b7364cc4" edgePoints="[(6.5625 : 6.375); (6.5625 : 6.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <featureReferencesSensorMoniker Id="6fd68845-a49d-454c-8dda-9bbd9c712da1" />
+      <nodes>
+        <featureShapeMoniker Id="1e6de2d1-f373-4d99-99eb-99cf4501e014" />
+        <deviceShapeMoniker Id="d6994e8b-6e60-456a-a2c6-8ec1716bdd54" />
+      </nodes>
+    </sensor>
+    <sensor Id="2b01ed5f-99eb-4d20-b494-6f0b0bd5f091" edgePoints="[(2.875 : 6.25); (2.875 : 6.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <featureReferencesSensorMoniker Id="7296251e-640c-4385-821e-e4af8e4b2192" />
+      <nodes>
+        <featureShapeMoniker Id="8e7e4205-9823-44f7-b295-e7e2b0e0189f" />
+        <deviceShapeMoniker Id="cfad6e8c-ee91-4ae7-8f27-886182628863" />
+      </nodes>
+    </sensor>
+    <actuatorConnector Id="f1cff6ff-1115-4f75-bf0e-0ecae92b3fc2" edgePoints="[(3.625 : 5.6875); (4 : 5.6875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <featureReferencesActuatorMoniker Id="e4bb15f3-7bef-42a7-80ae-b4874e6ea463" />
+      <nodes>
+        <featureShapeMoniker Id="8e7e4205-9823-44f7-b295-e7e2b0e0189f" />
+        <deviceShapeMoniker Id="b8ffac94-dff7-42b0-827f-82d6268cdbcf" />
+      </nodes>
+    </actuatorConnector>
+    <actuatorConnector Id="32e736d0-4d54-4e32-8191-3527644108e5" edgePoints="[(3.625 : 4.75); (4.75 : 4.75); (4.75 : 5.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <featureReferencesActuatorMoniker Id="b0634641-3534-4db7-b8fa-52dd6dda5492" />
+      <nodes>
+        <featureShapeMoniker Id="44915d36-f9d1-4d14-aea1-9a9528678bd2" />
+        <deviceShapeMoniker Id="b8ffac94-dff7-42b0-827f-82d6268cdbcf" />
+      </nodes>
+    </actuatorConnector>
+    <actuatorConnector Id="86aed950-6e42-46a6-9b72-9b678a8631ee" edgePoints="[(5.75 : 4.9375); (5.1562525 : 4.9375); (5.1562525 : 5.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <featureReferencesActuatorMoniker Id="ffafcf51-a70e-46f6-9df7-5d8daa85ee8c" />
+      <nodes>
+        <featureShapeMoniker Id="adb7bbea-a235-4e79-bd7f-c8da96b9cfbc" />
+        <deviceShapeMoniker Id="b8ffac94-dff7-42b0-827f-82d6268cdbcf" />
+      </nodes>
+    </actuatorConnector>
+    <actuatorConnector Id="8f56cea1-747a-4484-8a85-1308ad238bae" edgePoints="[(5.75 : 5.75); (5.5 : 5.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <featureReferencesActuatorMoniker Id="32c3c70f-e920-483b-9355-78d0137550b5" />
+      <nodes>
+        <featureShapeMoniker Id="1e6de2d1-f373-4d99-99eb-99cf4501e014" />
+        <deviceShapeMoniker Id="b8ffac94-dff7-42b0-827f-82d6268cdbcf" />
+      </nodes>
+    </actuatorConnector>
+    <sensor Id="c432b82d-2bea-465b-9547-c021ae05cf8b" edgePoints="[(3.125 : 3.375); (3.125 : 4.09375); (2 : 4.09375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <featureReferencesSensorMoniker Id="f42403da-6d04-4ff2-9a2f-b47ed5f086e9" />
+      <nodes>
+        <featureShapeMoniker Id="6fc54d7b-5410-4762-81a7-6bf14fd1aa54" />
+        <deviceShapeMoniker Id="a3673698-4b7f-4121-8a18-43295f5ce5da" />
+      </nodes>
+    </sensor>
+    <brother Id="8bc06b3d-57fb-4d45-8a27-f53fe017b76a" edgePoints="[(3.625 : 6.09375); (5.75 : 6.09375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <featureReferencesBrotherMoniker Id="78aa3ed1-91c6-4947-b7e9-6e5c94fba84f" />
+      <nodes>
+        <featureShapeMoniker Id="8e7e4205-9823-44f7-b295-e7e2b0e0189f" />
+        <featureShapeMoniker Id="1e6de2d1-f373-4d99-99eb-99cf4501e014" />
+      </nodes>
+    </brother>
   </nestedChildShapes>
 </vShomeDiagram>

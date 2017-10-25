@@ -7,7 +7,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.20725</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{b4e2d538-d1d9-492c-92e5-0e7f0fdfefe8}</ProjectGuid>
+    <ProjectGuid>{B4E2D538-D1D9-492C-92E5-0E7F0FDFEFE8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Ufba.vShome</RootNamespace>
@@ -73,6 +73,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Validation\FeatureReferencesActuatorBuilder.cs" />
+    <Compile Include="Validation\FeatureReferencesSensorBuilder.cs" />
+    <Compile Include="Validation\Feature.cs" />
     <None Include="..\Key.snk">
       <Link>Key.snk</Link>
     </None>

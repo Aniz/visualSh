@@ -572,7 +572,7 @@ namespace Ufba.vShome
 		/// </summary>
 		[DslDesign::DisplayNameResource("Ufba.vShome.FeatureReferencesFather/SourceFeature.DisplayName", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
 		[DslDesign::DescriptionResource("Ufba.vShome.FeatureReferencesFather/SourceFeature.Description", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "Father", PropertyDisplayNameKey="Ufba.vShome.FeatureReferencesFather/SourceFeature.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.One)]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "Father", PropertyDisplayNameKey="Ufba.vShome.FeatureReferencesFather/SourceFeature.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.ZeroOne)]
 		[DslModeling::DomainObjectId("67617821-bdfb-4ec0-a548-7fdbe232566a")]
 		public virtual Feature SourceFeature
 		{
@@ -1289,7 +1289,7 @@ namespace Ufba.vShome
 		/// </summary>
 		[DslDesign::DisplayNameResource("Ufba.vShome.FeatureReferencesSensor/Feature.DisplayName", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
 		[DslDesign::DescriptionResource("Ufba.vShome.FeatureReferencesSensor/Feature.Description", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "Sensor", PropertyDisplayNameKey="Ufba.vShome.FeatureReferencesSensor/Feature.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.One)]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "Sensor", PropertyDisplayNameKey="Ufba.vShome.FeatureReferencesSensor/Feature.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.ZeroOne)]
 		[DslModeling::DomainObjectId("f72fdf3b-2f74-4a7a-a3d2-54eea73224a3")]
 		public virtual Feature Feature
 		{
@@ -1528,7 +1528,7 @@ namespace Ufba.vShome
 		/// </summary>
 		[DslDesign::DisplayNameResource("Ufba.vShome.FeatureReferencesBrother/SourceFeature.DisplayName", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
 		[DslDesign::DescriptionResource("Ufba.vShome.FeatureReferencesBrother/SourceFeature.Description", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "Brother", PropertyDisplayNameKey="Ufba.vShome.FeatureReferencesBrother/SourceFeature.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.One)]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "Brother", PropertyDisplayNameKey="Ufba.vShome.FeatureReferencesBrother/SourceFeature.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.ZeroOne)]
 		[DslModeling::DomainObjectId("2fff0350-3793-4d8e-858b-88ac27086f35")]
 		public virtual Feature SourceFeature
 		{

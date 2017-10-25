@@ -119,13 +119,13 @@
             </xsd:complexType>
           </xsd:element>
           <!-- Relationship: FeatureReferencesFather -->
-          <xsd:element name="father" minOccurs="1" maxOccurs="1">
+          <xsd:element name="father" minOccurs="0" maxOccurs="1">
             <xsd:annotation>
               <xsd:documentation>Instance of FeatureReferencesFather</xsd:documentation>
             </xsd:annotation>
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element ref="featureReferencesFather" minOccurs="1" maxOccurs="1">
+                <xsd:element ref="featureReferencesFather" minOccurs="0" maxOccurs="1">
                   <xsd:annotation>
                     <xsd:documentation>[Instance of FeatureReferencesFather needs to be serialized in full-form]</xsd:documentation>
                   </xsd:annotation>
@@ -134,13 +134,13 @@
             </xsd:complexType>
           </xsd:element>
           <!-- Relationship: FeatureReferencesSensor -->
-          <xsd:element name="sensor" minOccurs="1" maxOccurs="1">
+          <xsd:element name="sensor" minOccurs="0" maxOccurs="1">
             <xsd:annotation>
               <xsd:documentation>Instance of FeatureReferencesSensor</xsd:documentation>
             </xsd:annotation>
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element ref="featureReferencesSensor" minOccurs="1" maxOccurs="1">
+                <xsd:element ref="featureReferencesSensor" minOccurs="0" maxOccurs="1">
                   <xsd:annotation>
                     <xsd:documentation>[Instance of FeatureReferencesSensor needs to be serialized in full-form]</xsd:documentation>
                   </xsd:annotation>
@@ -149,13 +149,13 @@
             </xsd:complexType>
           </xsd:element>
           <!-- Relationship: FeatureReferencesBrother -->
-          <xsd:element name="brother" minOccurs="1" maxOccurs="1">
+          <xsd:element name="brother" minOccurs="0" maxOccurs="1">
             <xsd:annotation>
               <xsd:documentation>Instance of FeatureReferencesBrother</xsd:documentation>
             </xsd:annotation>
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element ref="featureReferencesBrother" minOccurs="1" maxOccurs="1">
+                <xsd:element ref="featureReferencesBrother" minOccurs="0" maxOccurs="1">
                   <xsd:annotation>
                     <xsd:documentation>[Instance of FeatureReferencesBrother needs to be serialized in full-form]</xsd:documentation>
                   </xsd:annotation>

@@ -1,46 +1,50 @@
 ﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
-<#@ output extension=".txt" #>
+<#@ output extension=".vShome" #>
 <#@ vShome processor="vShomeDirectiveProcessor" requires="fileName='Sample.visSHome'"  #>
 
 Report template
 
-<#= this.ModelRoot.Name #>
-
+Create <#= this.ModelRoot.Name #> <#= this.ModelRoot.Port #>
 <#
-  // When you change the DSL Definition, some of the code below may not work.
-
-  foreach (ModelType type in this.ModelRoot.Types)
+String alternatives = "";
+foreach (Device device in this.ModelRoot.Devices)
+  {
+  #>
+  set <#= device.Name #> <#= device.DeviceType #> as <#= device.ReturnType #>
+  <#
+  }
+   foreach (Feature feature in this.ModelRoot.Features)
   {
 #>
-	<#= type.GetType().Name #> <#= type.Name #>
-<#
-	ModelClass modelClass = type as ModelClass;
-	if (modelClass != null)
-	{
-	  if (modelClass.Targets.Count > 0)
-	  {
-#>
-		Classes linked by Associations:
-<#
-		// Direct jump to linked elements (compare with the association loop below)
-		foreach (ModelClass target in modelClass.Targets)
-		{
-#>
-			 <#= target.Name #>
-<#	    
-		}
 	
-#>
-		Details of those Associations:
-<#
-		// Step to link, then to its other end
-		foreach (Association association in Association.GetLinksToTargets(modelClass))
-		{
-#>
-			<#= association.GetType().Name #> {<#= association.SourceMultiplicity #> - <#= association.TargetMultiplicity #>}   <#= association.Target.Name #>
-<#	    
-		}
-	  } 
-	}
+	use <#= feature.FeatureType #> <#= feature.FeatureName #>
+	<# if (feature.Father != null ){
+	#>
+	extends: <#= feature.Father.FeatureName #>			
+	<#}#>
+	<#
+	alternatives = "";
+	foreach (Feature fe in feature.Alternatives)
+	{
+	if(fe.FeatureName.ToString() != String.Empty){
+	alternatives = "alternatives: " + fe.FeatureName.ToString();
+	}}
+	foreach (Feature fe in feature.SourceFeatures)
+	{
+	if(fe.FeatureName.ToString() != String.Empty){
+	alternatives = "alternatives: " + fe.FeatureName.ToString();
+	}}
+	#>
+	<#= alternatives #>
+	
+	<# if (feature.Brother != null ){
+	#>
+	brother: <#= feature.Brother.FeatureName #>			
+	<#}#>
+
+	actuator: <#= feature.Actuator.Name #>
+	<# if (feature.Sensor != null){ #>sensor: <#= feature.Sensor.Name #><#
+	} if (feature.Serial != ""){ #>serial: <#= feature.Serial #><#}#>
+	<#
   }
 #>

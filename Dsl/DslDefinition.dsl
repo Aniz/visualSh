@@ -124,7 +124,7 @@
     </DomainRelationship>
     <DomainRelationship Id="dcbd29f2-8276-4933-a867-20d63709fe2d" Description="Description for Ufba.vShome.FeatureReferencesFather" Name="FeatureReferencesFather" DisplayName="Feature References Father" Namespace="Ufba.vShome">
       <Source>
-        <DomainRole Id="67617821-bdfb-4ec0-a548-7fdbe232566a" Description="Description for Ufba.vShome.FeatureReferencesFather.SourceFeature" Name="SourceFeature" DisplayName="Source Feature" PropertyName="Father" Multiplicity="One" PropertyDisplayName="Father">
+        <DomainRole Id="67617821-bdfb-4ec0-a548-7fdbe232566a" Description="Description for Ufba.vShome.FeatureReferencesFather.SourceFeature" Name="SourceFeature" DisplayName="Source Feature" PropertyName="Father" Multiplicity="ZeroOne" PropertyDisplayName="Father">
           <RolePlayer>
             <DomainClassMoniker Name="Feature" />
           </RolePlayer>
@@ -172,7 +172,7 @@
     </DomainRelationship>
     <DomainRelationship Id="0580a3cb-5fa1-49a7-9e7c-3cf1b64b1628" Description="Description for Ufba.vShome.FeatureReferencesSensor" Name="FeatureReferencesSensor" DisplayName="Feature References Sensor" Namespace="Ufba.vShome">
       <Source>
-        <DomainRole Id="f72fdf3b-2f74-4a7a-a3d2-54eea73224a3" Description="Description for Ufba.vShome.FeatureReferencesSensor.Feature" Name="Feature" DisplayName="Feature" PropertyName="Sensor" Multiplicity="One" PropertyDisplayName="Sensor">
+        <DomainRole Id="f72fdf3b-2f74-4a7a-a3d2-54eea73224a3" Description="Description for Ufba.vShome.FeatureReferencesSensor.Feature" Name="Feature" DisplayName="Feature" PropertyName="Sensor" Multiplicity="ZeroOne" PropertyDisplayName="Sensor">
           <RolePlayer>
             <DomainClassMoniker Name="Feature" />
           </RolePlayer>
@@ -188,7 +188,7 @@
     </DomainRelationship>
     <DomainRelationship Id="29f7432e-0b57-402d-99d8-bd274b334ba2" Description="Description for Ufba.vShome.FeatureReferencesBrother" Name="FeatureReferencesBrother" DisplayName="Feature References Brother" Namespace="Ufba.vShome">
       <Source>
-        <DomainRole Id="2fff0350-3793-4d8e-858b-88ac27086f35" Description="Description for Ufba.vShome.FeatureReferencesBrother.SourceFeature" Name="SourceFeature" DisplayName="Source Feature" PropertyName="Brother" Multiplicity="One" PropertyDisplayName="Brother">
+        <DomainRole Id="2fff0350-3793-4d8e-858b-88ac27086f35" Description="Description for Ufba.vShome.FeatureReferencesBrother.SourceFeature" Name="SourceFeature" DisplayName="Source Feature" PropertyName="Brother" Multiplicity="ZeroOne" PropertyDisplayName="Brother">
           <RolePlayer>
             <DomainClassMoniker Name="Feature" />
           </RolePlayer>
@@ -769,7 +769,7 @@
         <ConnectionBuilderMoniker Name="vShome/CommentReferencesFeaturesBuilder" />
       </ConnectionTool>
     </ToolboxTab>
-    <Validation UsesMenu="false" UsesOpen="false" UsesSave="false" UsesLoad="false" />
+    <Validation UsesMenu="true" UsesOpen="true" UsesSave="true" UsesLoad="false" />
     <DiagramMoniker Name="vShomeDiagram" />
   </Designer>
   <Explorer ExplorerGuid="458b7ea5-ccdb-4c4a-a3b6-42292eb1c295" Title="">

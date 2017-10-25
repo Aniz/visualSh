@@ -30,30 +30,6 @@ namespace Ufba.vShome
 						"Feature", "", "Actuator"),
 						"DSL0001", this);
 			}
-			if (this.Father == null)
-			{
-				context.LogViolation(DslValidation::ViolationType.Error,
-					string.Format(global::System.Globalization.CultureInfo.CurrentCulture, 
-						Ufba.vShome.vShomeDomainModel.SingletonResourceManager.GetString("MinimumMultiplicityMissingLink"), 
-						"Feature", "", "Father"),
-						"DSL0001", this);
-			}
-			if (this.Sensor == null)
-			{
-				context.LogViolation(DslValidation::ViolationType.Error,
-					string.Format(global::System.Globalization.CultureInfo.CurrentCulture, 
-						Ufba.vShome.vShomeDomainModel.SingletonResourceManager.GetString("MinimumMultiplicityMissingLink"), 
-						"Feature", "", "Sensor"),
-						"DSL0001", this);
-			}
-			if (this.Brother == null)
-			{
-				context.LogViolation(DslValidation::ViolationType.Error,
-					string.Format(global::System.Globalization.CultureInfo.CurrentCulture, 
-						Ufba.vShome.vShomeDomainModel.SingletonResourceManager.GetString("MinimumMultiplicityMissingLink"), 
-						"Feature", "", "Brother"),
-						"DSL0001", this);
-			}
 		} // ValidateFeatureMultiplicity
 	} // class Feature
 } // Ufba.vShome
