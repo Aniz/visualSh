@@ -1,7 +1,7 @@
 ﻿
 Report template
 
-Create rise "dev.cc"
+Create rise "/dev/cu.usbmodem411"
   set LightSensor Sensor as RANGE
     set AirConditioner Actuator as INFO
     set PresenceSensor Sensor as BOOL
@@ -13,71 +13,70 @@ Create rise "dev.cc"
   	
 	use Optional UserAirConditionerControl
 			
-	
-	
-	actuator: AirConditioner
-			
+		actuator: AirConditioner
+			serial: 5575292698449566428L
+		
+		
 	use Alternative AutomatedAirConditionerControl
 		extends: UserAirConditionerControl			
 			alternatives: AutomatedWindowControl
-	
-	
-	actuator: AirConditioner
-	sensor: TemperatureSensor		
+		actuator: AirConditioner
+		sensor: TemperatureSensor
+			serial: 4435596811596503762L
+		
+		
 	use Optional UserWindowControl
 			
-	
-	
-	actuator: AutomaticWindow
-			
+		actuator: AutomaticWindow
+			serial: 5575292698449566428L
+		
+		
 	use Alternative AutomatedWindowControl
 		extends: UserWindowControl			
 			alternatives: AutomatedAirConditionerControl
-	
-	
-	actuator: AutomaticWindow
-	sensor: TemperatureSensor		
+		actuator: AutomaticWindow
+		sensor: TemperatureSensor
+			serial: 4435596811596503762L
+		
+		
 	use Mandatory UserIlumination
 			
-	
-	
-	actuator: Led
-			
+		actuator: Led
+			serial: 4435596811596503762L
+		
+		
 	use OR AutomatedIluminationByLuminosity
 		extends: UserIlumination			
 			
-	
 		brother: AutomatedIluminationByPresence			
-	
-	actuator: Led
-	sensor: LightSensor		
-	use OR AlarmAgainstRobbery
+		actuator: Led
+		sensor: LightSensor
+			serial: 4435596811596503762L
+		
+		
+	use Optional AlarmAgainstRobbery
 			
-	
-	
-	actuator: Alarn
-			
+		actuator: Alarn
+			serial: 5575292698449566428L
+		
+		
 	use Mandatory PresenceIlusion
 			
-	
-	
-	actuator: Led
+		actuator: Led
+			serial: 4435596811596503762L
+		
+		
+	use Optional LockDoors
 			
-	use OR LockDoors
-			
-	
-	
-	actuator: AutomaticDoors
-			
+		actuator: AutomaticDoors
+			serial: 4435596811596503762L
+		
+		
 	use OR AutomatedIluminationByPresence
 		extends: PresenceIlusion			
 			
+		actuator: Led
+		sensor: PresenceSensor
+			serial: 4435596811596503762L
+		
 	
-	
-	actuator: Led
-	sensor: PresenceSensor		
-	use OR UserAirConditionerControl
-			
-	
-	
-	actuator: 

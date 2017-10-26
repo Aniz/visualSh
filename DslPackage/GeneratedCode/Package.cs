@@ -29,21 +29,13 @@ namespace Ufba.vShome
 	[VSShell::ProvideToolWindowVisibility(typeof(vShomeExplorerToolWindow), Constants.vShomeEditorFactoryId)]
 	[VSShell::ProvideStaticToolboxGroup("@Class DiagramsToolboxTab;Ufba.vShome.Dsl.dll", "Ufba.vShome.Class DiagramsToolboxTab")]
 	[VSShell::ProvideStaticToolboxItem("Ufba.vShome.Class DiagramsToolboxTab",
-					"@CommentToolboxItem;Ufba.vShome.Dsl.dll", 
-					"Ufba.vShome.CommentToolboxItem", 
-					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
-					"CommentF1Keyword", 
-					"@CommentToolboxBitmap;Ufba.vShome.Dsl.dll", 
-					0xff00ff,
-					Index = 0)]
-	[VSShell::ProvideStaticToolboxItem("Ufba.vShome.Class DiagramsToolboxTab",
 					"@DeviceToolboxItem;Ufba.vShome.Dsl.dll", 
 					"Ufba.vShome.DeviceToolboxItem", 
 					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
 					"Device", 
 					"@DeviceToolboxBitmap;Ufba.vShome.Dsl.dll", 
 					0xff00ff,
-					Index = 1)]
+					Index = 0)]
 	[VSShell::ProvideStaticToolboxItem("Ufba.vShome.Class DiagramsToolboxTab",
 					"@FeatureToolboxItem;Ufba.vShome.Dsl.dll", 
 					"Ufba.vShome.FeatureToolboxItem", 
@@ -51,7 +43,7 @@ namespace Ufba.vShome
 					"Feature", 
 					"@FeatureToolboxBitmap;Ufba.vShome.Dsl.dll", 
 					0xff00ff,
-					Index = 2)]
+					Index = 1)]
 	[VSShell::ProvideStaticToolboxItem("Ufba.vShome.Class DiagramsToolboxTab",
 					"@FatherToolboxItem;Ufba.vShome.Dsl.dll", 
 					"Ufba.vShome.FatherToolboxItem", 
@@ -59,7 +51,7 @@ namespace Ufba.vShome
 					"Father", 
 					"@FatherToolboxBitmap;Ufba.vShome.Dsl.dll", 
 					0xff00ff,
-					Index = 3)]
+					Index = 2)]
 	[VSShell::ProvideStaticToolboxItem("Ufba.vShome.Class DiagramsToolboxTab",
 					"@ActuatorToolboxItem;Ufba.vShome.Dsl.dll", 
 					"Ufba.vShome.ActuatorToolboxItem", 
@@ -67,7 +59,7 @@ namespace Ufba.vShome
 					"Actuator", 
 					"@ActuatorToolboxBitmap;Ufba.vShome.Dsl.dll", 
 					0xff00ff,
-					Index = 4)]
+					Index = 3)]
 	[VSShell::ProvideStaticToolboxItem("Ufba.vShome.Class DiagramsToolboxTab",
 					"@SensorToolboxItem;Ufba.vShome.Dsl.dll", 
 					"Ufba.vShome.SensorToolboxItem", 
@@ -75,7 +67,7 @@ namespace Ufba.vShome
 					"Sensor", 
 					"@SensorToolboxBitmap;Ufba.vShome.Dsl.dll", 
 					0xff00ff,
-					Index = 5)]
+					Index = 4)]
 	[VSShell::ProvideStaticToolboxItem("Ufba.vShome.Class DiagramsToolboxTab",
 					"@AlternativeToolboxItem;Ufba.vShome.Dsl.dll", 
 					"Ufba.vShome.AlternativeToolboxItem", 
@@ -83,7 +75,7 @@ namespace Ufba.vShome
 					"Alternative", 
 					"@AlternativeToolboxBitmap;Ufba.vShome.Dsl.dll", 
 					0xff00ff,
-					Index = 6)]
+					Index = 5)]
 	[VSShell::ProvideStaticToolboxItem("Ufba.vShome.Class DiagramsToolboxTab",
 					"@BrotherToolboxItem;Ufba.vShome.Dsl.dll", 
 					"Ufba.vShome.BrotherToolboxItem", 
@@ -91,15 +83,7 @@ namespace Ufba.vShome
 					"Brother", 
 					"@BrotherToolboxBitmap;Ufba.vShome.Dsl.dll", 
 					0xff00ff,
-					Index = 7)]
-	[VSShell::ProvideStaticToolboxItem("Ufba.vShome.Class DiagramsToolboxTab",
-					"@CommentLinkToolboxItem;Ufba.vShome.Dsl.dll", 
-					"Ufba.vShome.CommentLinkToolboxItem", 
-					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
-					"CommentLink", 
-					"@CommentLinkToolboxBitmap;Ufba.vShome.Dsl.dll", 
-					0xff00ff,
-					Index = 8)]
+					Index = 6)]
 	[VSShell::ProvideEditorFactory(typeof(vShomeEditorFactory), 103, TrustLevel = VSShellInterop::__VSEDITORTRUSTLEVEL.ETL_AlwaysTrusted)]
 	[VSShell::ProvideEditorExtension(typeof(vShomeEditorFactory), "." + Constants.DesignerFileExtension, 50)]
 	[VSShell::ProvideEditorLogicalView(typeof(vShomeEditorFactory), "{7651A702-06E5-11D1-8EBD-00A0C90F26EA}")] // Designer logical view GUID i.e. VSConstants.LOGVIEWID_Designer

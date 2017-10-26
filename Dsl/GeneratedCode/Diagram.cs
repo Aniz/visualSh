@@ -190,12 +190,6 @@ namespace Ufba.vShome
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Generated code.")]
 		protected override DslDiagrams::ShapeElement CreateChildShape(DslModeling::ModelElement element)
 		{
-			if(element is global::Ufba.vShome.Comment)
-			{
-				global::Ufba.vShome.CommentBoxShape newShape = new global::Ufba.vShome.CommentBoxShape(this.Partition);
-				if(newShape != null) newShape.Size = newShape.DefaultSize; // set default shape size
-				return newShape;
-			}
 			if(element is global::Ufba.vShome.Feature)
 			{
 				global::Ufba.vShome.FeatureShape newShape = new global::Ufba.vShome.FeatureShape(this.Partition);
@@ -215,27 +209,22 @@ namespace Ufba.vShome
 			}
 			if(element is global::Ufba.vShome.FeatureReferencesFather)
 			{
-				global::Ufba.vShome.Father newShape = new global::Ufba.vShome.Father(this.Partition);
+				global::Ufba.vShome.FatherC newShape = new global::Ufba.vShome.FatherC(this.Partition);
 				return newShape;
 			}
 			if(element is global::Ufba.vShome.FeatureReferencesAlternatives)
 			{
-				global::Ufba.vShome.Alternative newShape = new global::Ufba.vShome.Alternative(this.Partition);
+				global::Ufba.vShome.AlternativeC newShape = new global::Ufba.vShome.AlternativeC(this.Partition);
 				return newShape;
 			}
 			if(element is global::Ufba.vShome.FeatureReferencesBrother)
 			{
-				global::Ufba.vShome.Brother newShape = new global::Ufba.vShome.Brother(this.Partition);
+				global::Ufba.vShome.BrotherC newShape = new global::Ufba.vShome.BrotherC(this.Partition);
 				return newShape;
 			}
 			if(element is global::Ufba.vShome.FeatureReferencesSensor)
 			{
-				global::Ufba.vShome.Sensor newShape = new global::Ufba.vShome.Sensor(this.Partition);
-				return newShape;
-			}
-			if(element is global::Ufba.vShome.CommentReferencesFeatures)
-			{
-				global::Ufba.vShome.CommentLink newShape = new global::Ufba.vShome.CommentLink(this.Partition);
+				global::Ufba.vShome.SensorC newShape = new global::Ufba.vShome.SensorC(this.Partition);
 				return newShape;
 			}
 			return base.CreateChildShape(element);
@@ -249,27 +238,8 @@ namespace Ufba.vShome
 		protected override void InitializeShapeFields(global::System.Collections.Generic.IList<DslDiagrams::ShapeField> shapeFields)
 		{
 			base.InitializeShapeFields(shapeFields);
-			global::Ufba.vShome.CommentBoxShape.DecoratorsInitialized += CommentBoxShapeDecoratorMap.OnDecoratorsInitialized;
 			global::Ufba.vShome.FeatureShape.DecoratorsInitialized += FeatureShapeDecoratorMap.OnDecoratorsInitialized;
 			global::Ufba.vShome.DeviceShape.DecoratorsInitialized += DeviceShapeDecoratorMap.OnDecoratorsInitialized;
-		}
-		
-		/// <summary>
-		/// Class containing decorator path traversal methods for CommentBoxShape.
-		/// </summary>
-		internal static partial class CommentBoxShapeDecoratorMap
-		{
-			/// <summary>
-			/// Event handler called when decorator initialization is complete for CommentBoxShape.  Adds decorator mappings for this shape or connector.
-			/// </summary>
-			public static void OnDecoratorsInitialized(object sender, global::System.EventArgs e)
-			{
-				DslDiagrams::ShapeElement shape = (DslDiagrams::ShapeElement)sender;
-				DslDiagrams::AssociatedPropertyInfo propertyInfo;
-				
-				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::Ufba.vShome.Comment.TextDomainPropertyId);
-				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "Comment").AssociateValueWith(shape.Store, propertyInfo);
-			}
 		}
 		
 		/// <summary>
@@ -332,7 +302,6 @@ namespace Ufba.vShome
 		private global::Ufba.vShome.SensorConnectAction sensorConnectAction;
 		private global::Ufba.vShome.AlternativeConnectAction alternativeConnectAction;
 		private global::Ufba.vShome.BrotherConnectAction brotherConnectAction;
-		private global::Ufba.vShome.CommentLinkConnectAction commentLinkConnectAction;
 		/// <summary>
 		/// Virtual method to provide a filter when to select the mouse action
 		/// </summary>
@@ -399,15 +368,6 @@ namespace Ufba.vShome
 						this.brotherConnectAction.MouseActionDeactivated += new DslDiagrams::MouseAction.MouseActionDeactivatedEventHandler(OnConnectActionDeactivated);
 					}
 					action = this.brotherConnectAction;
-				} 
-				else if (SelectedToolboxItemSupportsFilterString(activeView, global::Ufba.vShome.vShomeToolboxHelper.CommentLinkFilterString))
-				{
-					if (this.commentLinkConnectAction == null)
-					{
-						this.commentLinkConnectAction = new global::Ufba.vShome.CommentLinkConnectAction(this);
-						this.commentLinkConnectAction.MouseActionDeactivated += new DslDiagrams::MouseAction.MouseActionDeactivatedEventHandler(OnConnectActionDeactivated);
-					}
-					action = this.commentLinkConnectAction;
 				} 
 				else
 				{
@@ -491,11 +451,6 @@ namespace Ufba.vShome
 						this.brotherConnectAction.Dispose();
 						this.brotherConnectAction = null;
 					}
-					if(this.commentLinkConnectAction != null)
-					{
-						this.commentLinkConnectAction.Dispose();
-						this.commentLinkConnectAction = null;
-					}
 				}
 			}
 			finally
@@ -549,7 +504,6 @@ namespace Ufba.vShome
 		/// <summary>
 		/// Rule that initiates view fixup when an element that has an associated shape is added to the model. 
 		/// </summary>
-		[DslModeling::RuleOn(typeof(global::Ufba.vShome.Comment), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
 		[DslModeling::RuleOn(typeof(global::Ufba.vShome.Feature), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
 		[DslModeling::RuleOn(typeof(global::Ufba.vShome.Device), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
 		[DslModeling::RuleOn(typeof(global::Ufba.vShome.FeatureReferencesActuator), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddConnectionRulePriority, InitiallyDisabled=true)]
@@ -557,7 +511,6 @@ namespace Ufba.vShome
 		[DslModeling::RuleOn(typeof(global::Ufba.vShome.FeatureReferencesAlternatives), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddConnectionRulePriority, InitiallyDisabled=true)]
 		[DslModeling::RuleOn(typeof(global::Ufba.vShome.FeatureReferencesBrother), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddConnectionRulePriority, InitiallyDisabled=true)]
 		[DslModeling::RuleOn(typeof(global::Ufba.vShome.FeatureReferencesSensor), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddConnectionRulePriority, InitiallyDisabled=true)]
-		[DslModeling::RuleOn(typeof(global::Ufba.vShome.CommentReferencesFeatures), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddConnectionRulePriority, InitiallyDisabled=true)]
 		internal sealed partial class FixUpDiagram : FixUpDiagramBase
 		{
 			[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
@@ -572,10 +525,6 @@ namespace Ufba.vShome
 				if(childElement is DslModeling::ElementLink)
 				{
 					parentElement = GetParentForRelationship((DslModeling::ElementLink)childElement);
-				} else
-				if(childElement is global::Ufba.vShome.Comment)
-				{
-					parentElement = GetParentForComment((global::Ufba.vShome.Comment)childElement);
 				} else
 				if(childElement is global::Ufba.vShome.Feature)
 				{
@@ -593,13 +542,6 @@ namespace Ufba.vShome
 				{
 					DslDiagrams::Diagram.FixUpDiagram(parentElement, childElement);
 				}
-			}
-			public static global::Ufba.vShome.ModelRoot GetParentForComment( global::Ufba.vShome.Comment root )
-			{
-				// Segments 0 and 1
-				global::Ufba.vShome.ModelRoot result = root.ModelRoot;
-				if ( result == null ) return null;
-				return result;
 			}
 			public static global::Ufba.vShome.ModelRoot GetParentForFeature( global::Ufba.vShome.Feature root )
 			{
@@ -709,7 +651,6 @@ namespace Ufba.vShome
 		[DslModeling::RuleOn(typeof(global::Ufba.vShome.FeatureReferencesAlternatives), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddConnectionRulePriority, InitiallyDisabled=true)]
 		[DslModeling::RuleOn(typeof(global::Ufba.vShome.FeatureReferencesBrother), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddConnectionRulePriority, InitiallyDisabled=true)]
 		[DslModeling::RuleOn(typeof(global::Ufba.vShome.FeatureReferencesSensor), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddConnectionRulePriority, InitiallyDisabled=true)]
-		[DslModeling::RuleOn(typeof(global::Ufba.vShome.CommentReferencesFeatures), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddConnectionRulePriority, InitiallyDisabled=true)]
 		internal sealed class ConnectorRolePlayerChanged : DslModeling::RolePlayerChangeRule
 		{
 			/// <summary>

@@ -69,9 +69,7 @@ namespace Ufba.vShome
 			{
 				typeof(ModelRoot),
 				typeof(Feature),
-				typeof(Comment),
 				typeof(Device),
-				typeof(ModelRootHasComments),
 				typeof(FeatureReferencesActuator),
 				typeof(FeatureReferencesFather),
 				typeof(ModelRootHasFeatures),
@@ -79,15 +77,12 @@ namespace Ufba.vShome
 				typeof(FeatureReferencesSensor),
 				typeof(FeatureReferencesBrother),
 				typeof(FeatureReferencesAlternatives),
-				typeof(CommentReferencesFeatures),
 				typeof(vShomeDiagram),
 				typeof(ActuatorConnector),
-				typeof(Father),
-				typeof(Brother),
-				typeof(Alternative),
-				typeof(Sensor),
-				typeof(CommentLink),
-				typeof(CommentBoxShape),
+				typeof(FatherC),
+				typeof(BrotherC),
+				typeof(AlternativeC),
+				typeof(SensorC),
 				typeof(FeatureShape),
 				typeof(DeviceShape),
 				typeof(global::Ufba.vShome.FixUpDiagram),
@@ -108,7 +103,6 @@ namespace Ufba.vShome
 				new DomainMemberInfo(typeof(Feature), "FeatureType", Feature.FeatureTypeDomainPropertyId, typeof(Feature.FeatureTypePropertyHandler)),
 				new DomainMemberInfo(typeof(Feature), "Serial", Feature.SerialDomainPropertyId, typeof(Feature.SerialPropertyHandler)),
 				new DomainMemberInfo(typeof(Feature), "FeatureName", Feature.FeatureNameDomainPropertyId, typeof(Feature.FeatureNamePropertyHandler)),
-				new DomainMemberInfo(typeof(Comment), "Text", Comment.TextDomainPropertyId, typeof(Comment.TextPropertyHandler)),
 				new DomainMemberInfo(typeof(Device), "Name", Device.NameDomainPropertyId, typeof(Device.NamePropertyHandler)),
 				new DomainMemberInfo(typeof(Device), "ReturnType", Device.ReturnTypeDomainPropertyId, typeof(Device.ReturnTypePropertyHandler)),
 				new DomainMemberInfo(typeof(Device), "DeviceType", Device.DeviceTypeDomainPropertyId, typeof(Device.DeviceTypePropertyHandler)),
@@ -122,8 +116,6 @@ namespace Ufba.vShome
 		{
 			return new DomainRolePlayerInfo[]
 			{
-				new DomainRolePlayerInfo(typeof(ModelRootHasComments), "ModelRoot", ModelRootHasComments.ModelRootDomainRoleId),
-				new DomainRolePlayerInfo(typeof(ModelRootHasComments), "Comment", ModelRootHasComments.CommentDomainRoleId),
 				new DomainRolePlayerInfo(typeof(FeatureReferencesActuator), "Feature", FeatureReferencesActuator.FeatureDomainRoleId),
 				new DomainRolePlayerInfo(typeof(FeatureReferencesActuator), "Device", FeatureReferencesActuator.DeviceDomainRoleId),
 				new DomainRolePlayerInfo(typeof(FeatureReferencesFather), "SourceFeature", FeatureReferencesFather.SourceFeatureDomainRoleId),
@@ -138,8 +130,6 @@ namespace Ufba.vShome
 				new DomainRolePlayerInfo(typeof(FeatureReferencesBrother), "TargetFeature", FeatureReferencesBrother.TargetFeatureDomainRoleId),
 				new DomainRolePlayerInfo(typeof(FeatureReferencesAlternatives), "SourceFeature", FeatureReferencesAlternatives.SourceFeatureDomainRoleId),
 				new DomainRolePlayerInfo(typeof(FeatureReferencesAlternatives), "TargetFeature", FeatureReferencesAlternatives.TargetFeatureDomainRoleId),
-				new DomainRolePlayerInfo(typeof(CommentReferencesFeatures), "Comment", CommentReferencesFeatures.CommentDomainRoleId),
-				new DomainRolePlayerInfo(typeof(CommentReferencesFeatures), "Feature", CommentReferencesFeatures.FeatureDomainRoleId),
 			};
 		}
 		#endregion
@@ -161,21 +151,18 @@ namespace Ufba.vShome
 	
 			if (createElementMap == null)
 			{
-				createElementMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(14);
+				createElementMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(11);
 				createElementMap.Add(typeof(ModelRoot), 0);
 				createElementMap.Add(typeof(Feature), 1);
-				createElementMap.Add(typeof(Comment), 2);
-				createElementMap.Add(typeof(Device), 3);
-				createElementMap.Add(typeof(vShomeDiagram), 4);
-				createElementMap.Add(typeof(ActuatorConnector), 5);
-				createElementMap.Add(typeof(Father), 6);
-				createElementMap.Add(typeof(Brother), 7);
-				createElementMap.Add(typeof(Alternative), 8);
-				createElementMap.Add(typeof(Sensor), 9);
-				createElementMap.Add(typeof(CommentLink), 10);
-				createElementMap.Add(typeof(CommentBoxShape), 11);
-				createElementMap.Add(typeof(FeatureShape), 12);
-				createElementMap.Add(typeof(DeviceShape), 13);
+				createElementMap.Add(typeof(Device), 2);
+				createElementMap.Add(typeof(vShomeDiagram), 3);
+				createElementMap.Add(typeof(ActuatorConnector), 4);
+				createElementMap.Add(typeof(FatherC), 5);
+				createElementMap.Add(typeof(BrotherC), 6);
+				createElementMap.Add(typeof(AlternativeC), 7);
+				createElementMap.Add(typeof(SensorC), 8);
+				createElementMap.Add(typeof(FeatureShape), 9);
+				createElementMap.Add(typeof(DeviceShape), 10);
 			}
 			int index;
 			if (!createElementMap.TryGetValue(elementType, out index))
@@ -191,18 +178,15 @@ namespace Ufba.vShome
 			{
 				case 0: return new ModelRoot(partition, propertyAssignments);
 				case 1: return new Feature(partition, propertyAssignments);
-				case 2: return new Comment(partition, propertyAssignments);
-				case 3: return new Device(partition, propertyAssignments);
-				case 4: return new vShomeDiagram(partition, propertyAssignments);
-				case 5: return new ActuatorConnector(partition, propertyAssignments);
-				case 6: return new Father(partition, propertyAssignments);
-				case 7: return new Brother(partition, propertyAssignments);
-				case 8: return new Alternative(partition, propertyAssignments);
-				case 9: return new Sensor(partition, propertyAssignments);
-				case 10: return new CommentLink(partition, propertyAssignments);
-				case 11: return new CommentBoxShape(partition, propertyAssignments);
-				case 12: return new FeatureShape(partition, propertyAssignments);
-				case 13: return new DeviceShape(partition, propertyAssignments);
+				case 2: return new Device(partition, propertyAssignments);
+				case 3: return new vShomeDiagram(partition, propertyAssignments);
+				case 4: return new ActuatorConnector(partition, propertyAssignments);
+				case 5: return new FatherC(partition, propertyAssignments);
+				case 6: return new BrotherC(partition, propertyAssignments);
+				case 7: return new AlternativeC(partition, propertyAssignments);
+				case 8: return new SensorC(partition, propertyAssignments);
+				case 9: return new FeatureShape(partition, propertyAssignments);
+				case 10: return new DeviceShape(partition, propertyAssignments);
 				default: return null;
 			}
 		}
@@ -225,16 +209,14 @@ namespace Ufba.vShome
 	
 			if (createElementLinkMap == null)
 			{
-				createElementLinkMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(9);
-				createElementLinkMap.Add(typeof(ModelRootHasComments), 0);
-				createElementLinkMap.Add(typeof(FeatureReferencesActuator), 1);
-				createElementLinkMap.Add(typeof(FeatureReferencesFather), 2);
-				createElementLinkMap.Add(typeof(ModelRootHasFeatures), 3);
-				createElementLinkMap.Add(typeof(ModelRootHasDevices), 4);
-				createElementLinkMap.Add(typeof(FeatureReferencesSensor), 5);
-				createElementLinkMap.Add(typeof(FeatureReferencesBrother), 6);
-				createElementLinkMap.Add(typeof(FeatureReferencesAlternatives), 7);
-				createElementLinkMap.Add(typeof(CommentReferencesFeatures), 8);
+				createElementLinkMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(7);
+				createElementLinkMap.Add(typeof(FeatureReferencesActuator), 0);
+				createElementLinkMap.Add(typeof(FeatureReferencesFather), 1);
+				createElementLinkMap.Add(typeof(ModelRootHasFeatures), 2);
+				createElementLinkMap.Add(typeof(ModelRootHasDevices), 3);
+				createElementLinkMap.Add(typeof(FeatureReferencesSensor), 4);
+				createElementLinkMap.Add(typeof(FeatureReferencesBrother), 5);
+				createElementLinkMap.Add(typeof(FeatureReferencesAlternatives), 6);
 			}
 			int index;
 			if (!createElementLinkMap.TryGetValue(elementLinkType, out index))
@@ -249,15 +231,13 @@ namespace Ufba.vShome
 			}
 			switch (index)
 			{
-				case 0: return new ModelRootHasComments(partition, roleAssignments, propertyAssignments);
-				case 1: return new FeatureReferencesActuator(partition, roleAssignments, propertyAssignments);
-				case 2: return new FeatureReferencesFather(partition, roleAssignments, propertyAssignments);
-				case 3: return new ModelRootHasFeatures(partition, roleAssignments, propertyAssignments);
-				case 4: return new ModelRootHasDevices(partition, roleAssignments, propertyAssignments);
-				case 5: return new FeatureReferencesSensor(partition, roleAssignments, propertyAssignments);
-				case 6: return new FeatureReferencesBrother(partition, roleAssignments, propertyAssignments);
-				case 7: return new FeatureReferencesAlternatives(partition, roleAssignments, propertyAssignments);
-				case 8: return new CommentReferencesFeatures(partition, roleAssignments, propertyAssignments);
+				case 0: return new FeatureReferencesActuator(partition, roleAssignments, propertyAssignments);
+				case 1: return new FeatureReferencesFather(partition, roleAssignments, propertyAssignments);
+				case 2: return new ModelRootHasFeatures(partition, roleAssignments, propertyAssignments);
+				case 3: return new ModelRootHasDevices(partition, roleAssignments, propertyAssignments);
+				case 4: return new FeatureReferencesSensor(partition, roleAssignments, propertyAssignments);
+				case 5: return new FeatureReferencesBrother(partition, roleAssignments, propertyAssignments);
+				case 6: return new FeatureReferencesAlternatives(partition, roleAssignments, propertyAssignments);
 				default: return null;
 			}
 		}
@@ -426,7 +406,6 @@ namespace Ufba.vShome
 		public vShomeDeleteClosureBase()
 		{
 			#region Initialize DomainData Table
-			DomainRoles.Add(global::Ufba.vShome.ModelRootHasComments.CommentDomainRoleId, true);
 			DomainRoles.Add(global::Ufba.vShome.ModelRootHasFeatures.FeatureDomainRoleId, true);
 			DomainRoles.Add(global::Ufba.vShome.ModelRootHasDevices.DeviceDomainRoleId, true);
 			#endregion

@@ -73,6 +73,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Validation\FeaturesConstraint.cs" />
     <None Include="..\Key.snk">
       <Link>Key.snk</Link>
     </None>
@@ -265,9 +266,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Validation\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
   </PropertyGroup>
 </Project>

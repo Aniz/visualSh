@@ -67,10 +67,6 @@ namespace Ufba.vShome
 		/// Toolbox item filter string used to identify Brother connector tool.
 		/// </summary>
 		public const string BrotherFilterString = "Brother.1.0";
-		/// <summary>
-		/// Toolbox item filter string used to identify CommentLink connector tool.
-		/// </summary>
-		public const string CommentLinkFilterString = "CommentLink.1.0";
 
 	
 		private global::System.Collections.Generic.Dictionary<string, DslDesign::ModelingToolboxItem> toolboxItemCache = new global::System.Collections.Generic.Dictionary<string, DslDesign::ModelingToolboxItem>();
@@ -118,7 +114,7 @@ namespace Ufba.vShome
 		{
 			get
 			{
-				return 9;
+				return 7;
 			}
 		}
 		
@@ -167,27 +163,11 @@ namespace Ufba.vShome
 			global::System.Globalization.CultureInfo resourceCulture = global::System.Globalization.CultureInfo.CurrentUICulture;
 			switch(itemId)
 			{
-				case "Ufba.vShome.CommentToolboxItem":
-					// Add Comment shape tool.
-					result = new DslDesign::ModelingToolboxItem(
-						"Ufba.vShome.CommentToolboxItem", // Unique identifier (non-localized) for the toolbox item.
-						1, // Position relative to other items in the same toolbox tab.
-						resourceManager.GetString("CommentToolboxItem", resourceCulture), // Localized display name for the item.
-						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("CommentToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
-						"Ufba.vShome.Class DiagramsToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
-						resourceManager.GetString("Class DiagramsToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
-						"CommentF1Keyword", // F1 help keyword for the toolbox item.
-						resourceManager.GetString("CommentToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
-						CreateElementToolPrototype(store, global::Ufba.vShome.Comment.DomainClassId), // ElementGroupPrototype (data object) representing model element on the toolbox.
-						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
-						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
-						});
-					break;
 				case "Ufba.vShome.DeviceToolboxItem":
 					// Add Device shape tool.
 					result = new DslDesign::ModelingToolboxItem(
 						"Ufba.vShome.DeviceToolboxItem", // Unique identifier (non-localized) for the toolbox item.
-						2, // Position relative to other items in the same toolbox tab.
+						1, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("DeviceToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("DeviceToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
 						"Ufba.vShome.Class DiagramsToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
@@ -203,7 +183,7 @@ namespace Ufba.vShome
 					// Add Feature shape tool.
 					result = new DslDesign::ModelingToolboxItem(
 						"Ufba.vShome.FeatureToolboxItem", // Unique identifier (non-localized) for the toolbox item.
-						3, // Position relative to other items in the same toolbox tab.
+						2, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("FeatureToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("FeatureToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
 						"Ufba.vShome.Class DiagramsToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
@@ -220,7 +200,7 @@ namespace Ufba.vShome
 					// Add Father connector tool.
 					result = new DslDesign::ModelingToolboxItem(
 						"Ufba.vShome.FatherToolboxItem", // Unique identifier (non-localized) for the toolbox item.
-						4, // Position relative to other items in the same toolbox tab.
+						3, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("FatherToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("FatherToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.				
 						"Ufba.vShome.Class DiagramsToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
@@ -238,7 +218,7 @@ namespace Ufba.vShome
 					// Add Actuator connector tool.
 					result = new DslDesign::ModelingToolboxItem(
 						"Ufba.vShome.ActuatorToolboxItem", // Unique identifier (non-localized) for the toolbox item.
-						5, // Position relative to other items in the same toolbox tab.
+						4, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("ActuatorToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("ActuatorToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.				
 						"Ufba.vShome.Class DiagramsToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
@@ -256,7 +236,7 @@ namespace Ufba.vShome
 					// Add Sensor connector tool.
 					result = new DslDesign::ModelingToolboxItem(
 						"Ufba.vShome.SensorToolboxItem", // Unique identifier (non-localized) for the toolbox item.
-						6, // Position relative to other items in the same toolbox tab.
+						5, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("SensorToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("SensorToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.				
 						"Ufba.vShome.Class DiagramsToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
@@ -274,7 +254,7 @@ namespace Ufba.vShome
 					// Add Alternative connector tool.
 					result = new DslDesign::ModelingToolboxItem(
 						"Ufba.vShome.AlternativeToolboxItem", // Unique identifier (non-localized) for the toolbox item.
-						7, // Position relative to other items in the same toolbox tab.
+						6, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("AlternativeToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("AlternativeToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.				
 						"Ufba.vShome.Class DiagramsToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
@@ -292,7 +272,7 @@ namespace Ufba.vShome
 					// Add Brother connector tool.
 					result = new DslDesign::ModelingToolboxItem(
 						"Ufba.vShome.BrotherToolboxItem", // Unique identifier (non-localized) for the toolbox item.
-						8, // Position relative to other items in the same toolbox tab.
+						7, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("BrotherToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("BrotherToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.				
 						"Ufba.vShome.Class DiagramsToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
@@ -303,24 +283,6 @@ namespace Ufba.vShome
 						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
 							new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require), 
 							new global::System.ComponentModel.ToolboxItemFilterAttribute(BrotherFilterString)
-						});
-					break;
-				case "Ufba.vShome.CommentLinkToolboxItem":
-
-					// Add CommentLink connector tool.
-					result = new DslDesign::ModelingToolboxItem(
-						"Ufba.vShome.CommentLinkToolboxItem", // Unique identifier (non-localized) for the toolbox item.
-						9, // Position relative to other items in the same toolbox tab.
-						resourceManager.GetString("CommentLinkToolboxItem", resourceCulture), // Localized display name for the item.
-						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("CommentLinkToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.				
-						"Ufba.vShome.Class DiagramsToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
-						resourceManager.GetString("Class DiagramsToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
-						"CommentLink", // F1 help keyword for the toolbox item.
-						resourceManager.GetString("CommentLinkToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
-						null, // Connector toolbox items do not have an underlying data object.
-						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
-							new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require), 
-							new global::System.ComponentModel.ToolboxItemFilterAttribute(CommentLinkFilterString)
 						});
 					break;
 				default:

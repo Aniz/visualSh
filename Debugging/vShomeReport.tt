@@ -1,5 +1,5 @@
 ﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
-<#@ output extension=".vShome" #>
+<#@ output extension=".shome" #>
 <#@ vShome processor="vShomeDirectiveProcessor" requires="fileName='Sample.visSHome'"  #>
 
 Report template
@@ -36,15 +36,18 @@ foreach (Device device in this.ModelRoot.Devices)
 	}}
 	#>
 	<#= alternatives #>
-	
 	<# if (feature.Brother != null ){
 	#>
 	brother: <#= feature.Brother.FeatureName #>			
 	<#}#>
-
 	actuator: <#= feature.Actuator.Name #>
-	<# if (feature.Sensor != null){ #>sensor: <#= feature.Sensor.Name #><#
-	} if (feature.Serial != ""){ #>serial: <#= feature.Serial #><#}#>
+	<# if (feature.Sensor != null){ #>
+	sensor: <#= feature.Sensor.Name #>
+	<#}#>
+	<# if (feature.Serial != ""){ #>
+	serial: <#= feature.Serial #>
+	<#}#>
+	
 	<#
   }
 #>

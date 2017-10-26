@@ -221,20 +221,6 @@ namespace Ufba.vShome
 		}
 		
 		#endregion
-		#region Comments opposite domain role accessor
-		
-		/// <summary>
-		/// Gets a list of Comments.
-		/// </summary>
-		public virtual DslModeling::LinkedElementCollection<Comment> Comments
-		{
-			[global::System.Diagnostics.DebuggerStepThrough]
-			get
-			{
-				return GetRoleCollection<DslModeling::LinkedElementCollection<Comment>, Comment>(global::Ufba.vShome.ModelRootHasComments.ModelRootDomainRoleId);
-			}
-		}
-		#endregion
 		#region Features opposite domain role accessor
 		
 		/// <summary>
@@ -285,11 +271,6 @@ namespace Ufba.vShome
 			{
 				DslModeling::DomainClassInfo rootElementDomainInfo = this.Partition.DomainDataDirectory.GetDomainClass(rootElement.DomainClassId);
 				
-				if (rootElementDomainInfo.IsDerivedFrom(global::Ufba.vShome.Comment.DomainClassId)) 
-				{
-					return true;
-				}
-				
 				if (rootElementDomainInfo.IsDerivedFrom(global::Ufba.vShome.Feature.DomainClassId)) 
 				{
 					return true;
@@ -324,29 +305,20 @@ namespace Ufba.vShome
 			if ( sourceElement == null ) throw new global::System.ArgumentNullException("sourceElement");
 		
 				
-			global::Ufba.vShome.Comment sourceComment1 = sourceElement as global::Ufba.vShome.Comment;
-			if (sourceComment1 != null)
-			{
-				// Create link for path ModelRootHasComments.Comments
-				this.Comments.Add(sourceComment1);
-
-				return;
-			}
-				
-			global::Ufba.vShome.Feature sourceFeature2 = sourceElement as global::Ufba.vShome.Feature;
-			if (sourceFeature2 != null)
+			global::Ufba.vShome.Feature sourceFeature1 = sourceElement as global::Ufba.vShome.Feature;
+			if (sourceFeature1 != null)
 			{
 				// Create link for path ModelRootHasFeatures.Features
-				this.Features.Add(sourceFeature2);
+				this.Features.Add(sourceFeature1);
 
 				return;
 			}
 				
-			global::Ufba.vShome.Device sourceDevice3 = sourceElement as global::Ufba.vShome.Device;
-			if (sourceDevice3 != null)
+			global::Ufba.vShome.Device sourceDevice2 = sourceElement as global::Ufba.vShome.Device;
+			if (sourceDevice2 != null)
 			{
 				// Create link for path ModelRootHasDevices.Devices
-				this.Devices.Add(sourceDevice3);
+				this.Devices.Add(sourceDevice2);
 
 				return;
 			}
@@ -373,26 +345,12 @@ namespace Ufba.vShome
 		{
 			if (sourceElement == null) throw new global::System.ArgumentNullException("sourceElement");
 				
-			global::Ufba.vShome.Comment sourceComment1 = sourceElement as global::Ufba.vShome.Comment;
-			if (sourceComment1 != null)
-			{
-				// Delete link for path ModelRootHasComments.Comments
-				
-				foreach (DslModeling::ElementLink link in global::Ufba.vShome.ModelRootHasComments.GetLinks((global::Ufba.vShome.ModelRoot)this, sourceComment1))
-				{
-					// Delete the link, but without possible delete propagation to the element since it's moving to a new location.
-					link.Delete(global::Ufba.vShome.ModelRootHasComments.ModelRootDomainRoleId, global::Ufba.vShome.ModelRootHasComments.CommentDomainRoleId);
-				}
-
-				return;
-			}
-				
-			global::Ufba.vShome.Feature sourceFeature2 = sourceElement as global::Ufba.vShome.Feature;
-			if (sourceFeature2 != null)
+			global::Ufba.vShome.Feature sourceFeature1 = sourceElement as global::Ufba.vShome.Feature;
+			if (sourceFeature1 != null)
 			{
 				// Delete link for path ModelRootHasFeatures.Features
 				
-				foreach (DslModeling::ElementLink link in global::Ufba.vShome.ModelRootHasFeatures.GetLinks((global::Ufba.vShome.ModelRoot)this, sourceFeature2))
+				foreach (DslModeling::ElementLink link in global::Ufba.vShome.ModelRootHasFeatures.GetLinks((global::Ufba.vShome.ModelRoot)this, sourceFeature1))
 				{
 					// Delete the link, but without possible delete propagation to the element since it's moving to a new location.
 					link.Delete(global::Ufba.vShome.ModelRootHasFeatures.ModelRootDomainRoleId, global::Ufba.vShome.ModelRootHasFeatures.FeatureDomainRoleId);
@@ -401,12 +359,12 @@ namespace Ufba.vShome
 				return;
 			}
 				
-			global::Ufba.vShome.Device sourceDevice3 = sourceElement as global::Ufba.vShome.Device;
-			if (sourceDevice3 != null)
+			global::Ufba.vShome.Device sourceDevice2 = sourceElement as global::Ufba.vShome.Device;
+			if (sourceDevice2 != null)
 			{
 				// Delete link for path ModelRootHasDevices.Devices
 				
-				foreach (DslModeling::ElementLink link in global::Ufba.vShome.ModelRootHasDevices.GetLinks((global::Ufba.vShome.ModelRoot)this, sourceDevice3))
+				foreach (DslModeling::ElementLink link in global::Ufba.vShome.ModelRootHasDevices.GetLinks((global::Ufba.vShome.ModelRoot)this, sourceDevice2))
 				{
 					// Delete the link, but without possible delete propagation to the element since it's moving to a new location.
 					link.Delete(global::Ufba.vShome.ModelRootHasDevices.ModelRootDomainRoleId, global::Ufba.vShome.ModelRootHasDevices.DeviceDomainRoleId);
@@ -871,181 +829,6 @@ namespace Ufba.vShome
 			get
 			{
 				return GetRoleCollection<DslModeling::LinkedElementCollection<Feature>, Feature>(global::Ufba.vShome.FeatureReferencesAlternatives.TargetFeatureDomainRoleId);
-			}
-		}
-		#endregion
-		#region Comments opposite domain role accessor
-		
-		/// <summary>
-		/// Gets a list of Comments.
-		/// Description for Ufba.vShome.CommentReferencesFeatures.Feature
-		/// </summary>
-		public virtual DslModeling::LinkedElementCollection<Comment> Comments
-		{
-			[global::System.Diagnostics.DebuggerStepThrough]
-			get
-			{
-				return GetRoleCollection<DslModeling::LinkedElementCollection<Comment>, Comment>(global::Ufba.vShome.CommentReferencesFeatures.FeatureDomainRoleId);
-			}
-		}
-		#endregion
-	}
-}
-namespace Ufba.vShome
-{
-	/// <summary>
-	/// DomainClass Comment
-	/// </summary>
-	[DslDesign::DisplayNameResource("Ufba.vShome.Comment.DisplayName", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
-	[DslDesign::DescriptionResource("Ufba.vShome.Comment.Description", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
-	[DslModeling::DomainModelOwner(typeof(global::Ufba.vShome.vShomeDomainModel))]
-	[global::System.CLSCompliant(true)]
-	[DslModeling::DomainObjectId("2aa65212-fa5a-4104-8e30-706f532c2271")]
-	public partial class Comment : DslModeling::ModelElement
-	{
-		#region Constructors, domain class Id
-	
-		/// <summary>
-		/// Comment domain class Id.
-		/// </summary>
-		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x2aa65212, 0xfa5a, 0x4104, 0x8e, 0x30, 0x70, 0x6f, 0x53, 0x2c, 0x22, 0x71);
-		/// <summary>
-		/// Constructor
-		/// </summary>
-		/// <param name="store">Store where new element is to be created.</param>
-		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
-		public Comment(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
-			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
-		{
-		}
-		
-		/// <summary>
-		/// Constructor
-		/// </summary>
-		/// <param name="partition">Partition where new element is to be created.</param>
-		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
-		public Comment(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
-			: base(partition, propertyAssignments)
-		{
-		}
-		#endregion
-		#region Text domain property code
-		
-		/// <summary>
-		/// Text domain property Id.
-		/// </summary>
-		public static readonly global::System.Guid TextDomainPropertyId = new global::System.Guid(0xa083ae06, 0x49a1, 0x4f14, 0x9c, 0x8e, 0x78, 0x4f, 0x0e, 0x67, 0xf6, 0xe4);
-		
-		/// <summary>
-		/// Storage for Text
-		/// </summary>
-		private global::System.String textPropertyStorage = string.Empty;
-		
-		/// <summary>
-		/// Gets or sets the value of Text domain property.
-		/// </summary>
-		[DslDesign::DisplayNameResource("Ufba.vShome.Comment/Text.DisplayName", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("Ufba.vShome.Comment/Text.Description", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
-		[global::System.ComponentModel.DefaultValue("")]
-		[DslModeling::DomainObjectId("a083ae06-49a1-4f14-9c8e-784f0e67f6e4")]
-		public global::System.String Text
-		{
-			[global::System.Diagnostics.DebuggerStepThrough]
-			get
-			{
-				return textPropertyStorage;
-			}
-			[global::System.Diagnostics.DebuggerStepThrough]
-			set
-			{
-				TextPropertyHandler.Instance.SetValue(this, value);
-			}
-		}
-		/// <summary>
-		/// Value handler for the Comment.Text domain property.
-		/// </summary>
-		internal sealed partial class TextPropertyHandler : DslModeling::DomainPropertyValueHandler<Comment, global::System.String>
-		{
-			private TextPropertyHandler() { }
-		
-			/// <summary>
-			/// Gets the singleton instance of the Comment.Text domain property value handler.
-			/// </summary>
-			public static readonly TextPropertyHandler Instance = new TextPropertyHandler();
-		
-			/// <summary>
-			/// Gets the Id of the Comment.Text domain property.
-			/// </summary>
-			public sealed override global::System.Guid DomainPropertyId
-			{
-				[global::System.Diagnostics.DebuggerStepThrough]
-				get
-				{
-					return TextDomainPropertyId;
-				}
-			}
-			
-			/// <summary>
-			/// Gets a strongly-typed value of the property on specified element.
-			/// </summary>
-			/// <param name="element">Element which owns the property.</param>
-			/// <returns>Property value.</returns>
-			public override sealed global::System.String GetValue(Comment element)
-			{
-				if (element == null) throw new global::System.ArgumentNullException("element");
-				return element.textPropertyStorage;
-			}
-		
-			/// <summary>
-			/// Sets property value on an element.
-			/// </summary>
-			/// <param name="element">Element which owns the property.</param>
-			/// <param name="newValue">New property value.</param>
-			public override sealed void SetValue(Comment element, global::System.String newValue)
-			{
-				if (element == null) throw new global::System.ArgumentNullException("element");
-		
-				global::System.String oldValue = GetValue(element);
-				if (newValue != oldValue)
-				{
-					ValueChanging(element, oldValue, newValue);
-					element.textPropertyStorage = newValue;
-					ValueChanged(element, oldValue, newValue);
-				}
-			}
-		}
-		
-		#endregion
-		#region ModelRoot opposite domain role accessor
-		/// <summary>
-		/// Gets or sets ModelRoot.
-		/// </summary>
-		public virtual ModelRoot ModelRoot
-		{
-			[global::System.Diagnostics.DebuggerStepThrough]
-			get
-			{
-				return DslModeling::DomainRoleInfo.GetLinkedElement(this, global::Ufba.vShome.ModelRootHasComments.CommentDomainRoleId) as ModelRoot;
-			}
-			[global::System.Diagnostics.DebuggerStepThrough]
-			set
-			{
-				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::Ufba.vShome.ModelRootHasComments.CommentDomainRoleId, value);
-			}
-		}
-		#endregion
-		#region Features opposite domain role accessor
-		
-		/// <summary>
-		/// Gets a list of Features.
-		/// Description for Ufba.vShome.CommentReferencesFeatures.Comment
-		/// </summary>
-		public virtual DslModeling::LinkedElementCollection<Feature> Features
-		{
-			[global::System.Diagnostics.DebuggerStepThrough]
-			get
-			{
-				return GetRoleCollection<DslModeling::LinkedElementCollection<Feature>, Feature>(global::Ufba.vShome.CommentReferencesFeatures.CommentDomainRoleId);
 			}
 		}
 		#endregion

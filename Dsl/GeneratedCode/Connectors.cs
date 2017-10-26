@@ -131,15 +131,15 @@ namespace Ufba.vShome
 namespace Ufba.vShome
 {
 	/// <summary>
-	/// DomainClass Father
-	/// Description for Ufba.vShome.Father
+	/// DomainClass FatherC
+	/// Description for Ufba.vShome.FatherC
 	/// </summary>
-	[DslDesign::DisplayNameResource("Ufba.vShome.Father.DisplayName", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
-	[DslDesign::DescriptionResource("Ufba.vShome.Father.Description", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
+	[DslDesign::DisplayNameResource("Ufba.vShome.FatherC.DisplayName", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("Ufba.vShome.FatherC.Description", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
 	[DslModeling::DomainModelOwner(typeof(global::Ufba.vShome.vShomeDomainModel))]
 	[global::System.CLSCompliant(true)]
 	[DslModeling::DomainObjectId("133eddb3-963a-4de8-82e1-a638f16bb74e")]
-	public partial class Father : DslDiagrams::BinaryLinkShape
+	public partial class FatherC : DslDiagrams::BinaryLinkShape
 	{
 		#region DiagramElement boilerplate
 		private static DslDiagrams::StyleSet classStyleSet;
@@ -204,9 +204,9 @@ namespace Ufba.vShome
 		}
 		
 		/// <summary>
-		/// Finds a decorator associated with Father.
+		/// Finds a decorator associated with FatherC.
 		/// </summary>
-		public static DslDiagrams::Decorator FindFatherDecorator(string decoratorName)
+		public static DslDiagrams::Decorator FindFatherCDecorator(string decoratorName)
 		{	
 			if(decorators == null) return null;
 			return DslDiagrams::ShapeElement.FindDecorator(decorators, decoratorName);
@@ -248,7 +248,7 @@ namespace Ufba.vShome
 		#region Constructors, domain class Id
 	
 		/// <summary>
-		/// Father domain class Id.
+		/// FatherC domain class Id.
 		/// </summary>
 		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x133eddb3, 0x963a, 0x4de8, 0x82, 0xe1, 0xa6, 0x38, 0xf1, 0x6b, 0xb7, 0x4e);
 		/// <summary>
@@ -256,7 +256,7 @@ namespace Ufba.vShome
 		/// </summary>
 		/// <param name="store">Store where new element is to be created.</param>
 		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
-		public Father(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
+		public FatherC(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
 			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
 		{
 		}
@@ -266,7 +266,7 @@ namespace Ufba.vShome
 		/// </summary>
 		/// <param name="partition">Partition where new element is to be created.</param>
 		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
-		public Father(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
+		public FatherC(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
 			: base(partition, propertyAssignments)
 		{
 		}
@@ -276,15 +276,15 @@ namespace Ufba.vShome
 namespace Ufba.vShome
 {
 	/// <summary>
-	/// DomainClass Brother
-	/// Description for Ufba.vShome.Brother
+	/// DomainClass BrotherC
+	/// Description for Ufba.vShome.BrotherC
 	/// </summary>
-	[DslDesign::DisplayNameResource("Ufba.vShome.Brother.DisplayName", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
-	[DslDesign::DescriptionResource("Ufba.vShome.Brother.Description", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
+	[DslDesign::DisplayNameResource("Ufba.vShome.BrotherC.DisplayName", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("Ufba.vShome.BrotherC.Description", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
 	[DslModeling::DomainModelOwner(typeof(global::Ufba.vShome.vShomeDomainModel))]
 	[global::System.CLSCompliant(true)]
 	[DslModeling::DomainObjectId("2f46d126-beb6-429a-bb2d-9379546f7cff")]
-	public partial class Brother : DslDiagrams::BinaryLinkShape
+	public partial class BrotherC : DslDiagrams::BinaryLinkShape
 	{
 		#region DiagramElement boilerplate
 		private static DslDiagrams::StyleSet classStyleSet;
@@ -349,154 +349,9 @@ namespace Ufba.vShome
 		}
 		
 		/// <summary>
-		/// Finds a decorator associated with Brother.
+		/// Finds a decorator associated with BrotherC.
 		/// </summary>
-		public static DslDiagrams::Decorator FindBrotherDecorator(string decoratorName)
-		{	
-			if(decorators == null) return null;
-			return DslDiagrams::ShapeElement.FindDecorator(decorators, decoratorName);
-		}
-		
-		#endregion
-		
-		#region Connector styles
-		/// <summary>
-		/// Initializes style set resources for this shape type
-		/// </summary>
-		/// <param name="classStyleSet">The style set for this shape class</param>
-		protected override void InitializeResources(DslDiagrams::StyleSet classStyleSet)
-		{
-			base.InitializeResources(classStyleSet);
-			
-			// Line pen settings for this connector.
-			DslDiagrams::PenSettings linePen = new DslDiagrams::PenSettings();
-			linePen.Color = global::System.Drawing.Color.FromKnownColor(global::System.Drawing.KnownColor.Indigo);
-			classStyleSet.OverridePen(DslDiagrams::DiagramPens.ConnectionLineDecorator, linePen);
-			classStyleSet.OverridePen(DslDiagrams::DiagramPens.ConnectionLine, linePen);
-			DslDiagrams::BrushSettings lineBrush = new DslDiagrams::BrushSettings();
-			lineBrush.Color = global::System.Drawing.Color.FromKnownColor(global::System.Drawing.KnownColor.Indigo);
-			classStyleSet.OverrideBrush(DslDiagrams::DiagramBrushes.ConnectionLineDecorator, lineBrush);
-			
-		}
-		
-		/// <summary>
-		/// Initializes resources associated with this connector instance.
-		/// </summary>
-		protected override void InitializeInstanceResources()
-		{
-			base.InitializeInstanceResources();
-			this.SetDecorators(DslDiagrams::LinkDecorator.DecoratorEmptyDiamond, new DslDiagrams::SizeD(0.1,0.1), DslDiagrams::LinkDecorator.DecoratorEmptyDiamond, new DslDiagrams::SizeD(0.1,0.1), false);
-		}
-		
-		#endregion
-		
-		#region Constructors, domain class Id
-	
-		/// <summary>
-		/// Brother domain class Id.
-		/// </summary>
-		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x2f46d126, 0xbeb6, 0x429a, 0xbb, 0x2d, 0x93, 0x79, 0x54, 0x6f, 0x7c, 0xff);
-		/// <summary>
-		/// Constructor
-		/// </summary>
-		/// <param name="store">Store where new element is to be created.</param>
-		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
-		public Brother(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
-			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
-		{
-		}
-		
-		/// <summary>
-		/// Constructor
-		/// </summary>
-		/// <param name="partition">Partition where new element is to be created.</param>
-		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
-		public Brother(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
-			: base(partition, propertyAssignments)
-		{
-		}
-		#endregion
-	}
-}
-namespace Ufba.vShome
-{
-	/// <summary>
-	/// DomainClass Alternative
-	/// Description for Ufba.vShome.Alternative
-	/// </summary>
-	[DslDesign::DisplayNameResource("Ufba.vShome.Alternative.DisplayName", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
-	[DslDesign::DescriptionResource("Ufba.vShome.Alternative.Description", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
-	[DslModeling::DomainModelOwner(typeof(global::Ufba.vShome.vShomeDomainModel))]
-	[global::System.CLSCompliant(true)]
-	[DslModeling::DomainObjectId("015221af-d804-4e57-8545-6714a3e8bdbc")]
-	public partial class Alternative : DslDiagrams::BinaryLinkShape
-	{
-		#region DiagramElement boilerplate
-		private static DslDiagrams::StyleSet classStyleSet;
-		private static global::System.Collections.Generic.IList<DslDiagrams::ShapeField> shapeFields;
-		private static global::System.Collections.Generic.IList<DslDiagrams::Decorator> decorators;
-		
-		/// <summary>
-		/// Per-class style set for this shape.
-		/// </summary>
-		protected override DslDiagrams::StyleSet ClassStyleSet
-		{
-			get
-			{
-				if (classStyleSet == null)
-				{
-					classStyleSet = CreateClassStyleSet();
-				}
-				return classStyleSet;
-			}
-		}
-		
-		/// <summary>
-		/// Per-class ShapeFields for this shape.
-		/// </summary>
-		public override global::System.Collections.Generic.IList<DslDiagrams::ShapeField> ShapeFields
-		{
-			get
-			{
-				if (shapeFields == null)
-				{
-					shapeFields = CreateShapeFields();
-				}
-				return shapeFields;
-			}
-		}
-		
-		/// <summary>
-		/// Event fired when decorator initialization is complete for this shape type.
-		/// </summary>
-		public static event global::System.EventHandler DecoratorsInitialized;
-		
-		/// <summary>
-		/// List containing decorators used by this type.
-		/// </summary>
-		public override global::System.Collections.Generic.IList<DslDiagrams::Decorator> Decorators
-		{
-			get 
-			{
-				if(decorators == null)
-				{
-					decorators = CreateDecorators();
-					
-					// fire this event to allow the diagram to initialize decorator mappings for this shape type.
-					if(DecoratorsInitialized != null)
-					{
-						DecoratorsInitialized(this, global::System.EventArgs.Empty);
-					}
-				}
-				
-				return decorators; 
-			}
-		}
-		
-		/// <summary>
-		/// Finds a decorator associated with Alternative.
-		/// </summary>
-		public static DslDiagrams::Decorator FindAlternativeDecorator(string decoratorName)
+		public static DslDiagrams::Decorator FindBrotherCDecorator(string decoratorName)
 		{	
 			if(decorators == null) return null;
 			return DslDiagrams::ShapeElement.FindDecorator(decorators, decoratorName);
@@ -538,15 +393,15 @@ namespace Ufba.vShome
 		#region Constructors, domain class Id
 	
 		/// <summary>
-		/// Alternative domain class Id.
+		/// BrotherC domain class Id.
 		/// </summary>
-		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x015221af, 0xd804, 0x4e57, 0x85, 0x45, 0x67, 0x14, 0xa3, 0xe8, 0xbd, 0xbc);
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x2f46d126, 0xbeb6, 0x429a, 0xbb, 0x2d, 0x93, 0x79, 0x54, 0x6f, 0x7c, 0xff);
 		/// <summary>
 		/// Constructor
 		/// </summary>
 		/// <param name="store">Store where new element is to be created.</param>
 		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
-		public Alternative(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
+		public BrotherC(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
 			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
 		{
 		}
@@ -556,7 +411,7 @@ namespace Ufba.vShome
 		/// </summary>
 		/// <param name="partition">Partition where new element is to be created.</param>
 		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
-		public Alternative(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
+		public BrotherC(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
 			: base(partition, propertyAssignments)
 		{
 		}
@@ -566,15 +421,15 @@ namespace Ufba.vShome
 namespace Ufba.vShome
 {
 	/// <summary>
-	/// DomainClass Sensor
-	/// Description for Ufba.vShome.Sensor
+	/// DomainClass AlternativeC
+	/// Description for Ufba.vShome.AlternativeC
 	/// </summary>
-	[DslDesign::DisplayNameResource("Ufba.vShome.Sensor.DisplayName", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
-	[DslDesign::DescriptionResource("Ufba.vShome.Sensor.Description", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
+	[DslDesign::DisplayNameResource("Ufba.vShome.AlternativeC.DisplayName", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("Ufba.vShome.AlternativeC.Description", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
 	[DslModeling::DomainModelOwner(typeof(global::Ufba.vShome.vShomeDomainModel))]
 	[global::System.CLSCompliant(true)]
-	[DslModeling::DomainObjectId("f830940c-8e9b-403f-acd7-7befff6b3722")]
-	public partial class Sensor : DslDiagrams::BinaryLinkShape
+	[DslModeling::DomainObjectId("015221af-d804-4e57-8545-6714a3e8bdbc")]
+	public partial class AlternativeC : DslDiagrams::BinaryLinkShape
 	{
 		#region DiagramElement boilerplate
 		private static DslDiagrams::StyleSet classStyleSet;
@@ -639,9 +494,154 @@ namespace Ufba.vShome
 		}
 		
 		/// <summary>
-		/// Finds a decorator associated with Sensor.
+		/// Finds a decorator associated with AlternativeC.
 		/// </summary>
-		public static DslDiagrams::Decorator FindSensorDecorator(string decoratorName)
+		public static DslDiagrams::Decorator FindAlternativeCDecorator(string decoratorName)
+		{	
+			if(decorators == null) return null;
+			return DslDiagrams::ShapeElement.FindDecorator(decorators, decoratorName);
+		}
+		
+		#endregion
+		
+		#region Connector styles
+		/// <summary>
+		/// Initializes style set resources for this shape type
+		/// </summary>
+		/// <param name="classStyleSet">The style set for this shape class</param>
+		protected override void InitializeResources(DslDiagrams::StyleSet classStyleSet)
+		{
+			base.InitializeResources(classStyleSet);
+			
+			// Line pen settings for this connector.
+			DslDiagrams::PenSettings linePen = new DslDiagrams::PenSettings();
+			linePen.Color = global::System.Drawing.Color.FromKnownColor(global::System.Drawing.KnownColor.Indigo);
+			classStyleSet.OverridePen(DslDiagrams::DiagramPens.ConnectionLineDecorator, linePen);
+			classStyleSet.OverridePen(DslDiagrams::DiagramPens.ConnectionLine, linePen);
+			DslDiagrams::BrushSettings lineBrush = new DslDiagrams::BrushSettings();
+			lineBrush.Color = global::System.Drawing.Color.FromKnownColor(global::System.Drawing.KnownColor.Indigo);
+			classStyleSet.OverrideBrush(DslDiagrams::DiagramBrushes.ConnectionLineDecorator, lineBrush);
+			
+		}
+		
+		/// <summary>
+		/// Initializes resources associated with this connector instance.
+		/// </summary>
+		protected override void InitializeInstanceResources()
+		{
+			base.InitializeInstanceResources();
+			this.SetDecorators(DslDiagrams::LinkDecorator.DecoratorEmptyDiamond, new DslDiagrams::SizeD(0.1,0.1), DslDiagrams::LinkDecorator.DecoratorEmptyDiamond, new DslDiagrams::SizeD(0.1,0.1), false);
+		}
+		
+		#endregion
+		
+		#region Constructors, domain class Id
+	
+		/// <summary>
+		/// AlternativeC domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x015221af, 0xd804, 0x4e57, 0x85, 0x45, 0x67, 0x14, 0xa3, 0xe8, 0xbd, 0xbc);
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public AlternativeC(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public AlternativeC(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, propertyAssignments)
+		{
+		}
+		#endregion
+	}
+}
+namespace Ufba.vShome
+{
+	/// <summary>
+	/// DomainClass SensorC
+	/// Description for Ufba.vShome.SensorC
+	/// </summary>
+	[DslDesign::DisplayNameResource("Ufba.vShome.SensorC.DisplayName", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("Ufba.vShome.SensorC.Description", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::Ufba.vShome.vShomeDomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainObjectId("f830940c-8e9b-403f-acd7-7befff6b3722")]
+	public partial class SensorC : DslDiagrams::BinaryLinkShape
+	{
+		#region DiagramElement boilerplate
+		private static DslDiagrams::StyleSet classStyleSet;
+		private static global::System.Collections.Generic.IList<DslDiagrams::ShapeField> shapeFields;
+		private static global::System.Collections.Generic.IList<DslDiagrams::Decorator> decorators;
+		
+		/// <summary>
+		/// Per-class style set for this shape.
+		/// </summary>
+		protected override DslDiagrams::StyleSet ClassStyleSet
+		{
+			get
+			{
+				if (classStyleSet == null)
+				{
+					classStyleSet = CreateClassStyleSet();
+				}
+				return classStyleSet;
+			}
+		}
+		
+		/// <summary>
+		/// Per-class ShapeFields for this shape.
+		/// </summary>
+		public override global::System.Collections.Generic.IList<DslDiagrams::ShapeField> ShapeFields
+		{
+			get
+			{
+				if (shapeFields == null)
+				{
+					shapeFields = CreateShapeFields();
+				}
+				return shapeFields;
+			}
+		}
+		
+		/// <summary>
+		/// Event fired when decorator initialization is complete for this shape type.
+		/// </summary>
+		public static event global::System.EventHandler DecoratorsInitialized;
+		
+		/// <summary>
+		/// List containing decorators used by this type.
+		/// </summary>
+		public override global::System.Collections.Generic.IList<DslDiagrams::Decorator> Decorators
+		{
+			get 
+			{
+				if(decorators == null)
+				{
+					decorators = CreateDecorators();
+					
+					// fire this event to allow the diagram to initialize decorator mappings for this shape type.
+					if(DecoratorsInitialized != null)
+					{
+						DecoratorsInitialized(this, global::System.EventArgs.Empty);
+					}
+				}
+				
+				return decorators; 
+			}
+		}
+		
+		/// <summary>
+		/// Finds a decorator associated with SensorC.
+		/// </summary>
+		public static DslDiagrams::Decorator FindSensorCDecorator(string decoratorName)
 		{	
 			if(decorators == null) return null;
 			return DslDiagrams::ShapeElement.FindDecorator(decorators, decoratorName);
@@ -669,7 +669,7 @@ namespace Ufba.vShome
 		#region Constructors, domain class Id
 	
 		/// <summary>
-		/// Sensor domain class Id.
+		/// SensorC domain class Id.
 		/// </summary>
 		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0xf830940c, 0x8e9b, 0x403f, 0xac, 0xd7, 0x7b, 0xef, 0xff, 0x6b, 0x37, 0x22);
 		/// <summary>
@@ -677,7 +677,7 @@ namespace Ufba.vShome
 		/// </summary>
 		/// <param name="store">Store where new element is to be created.</param>
 		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
-		public Sensor(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
+		public SensorC(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
 			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
 		{
 		}
@@ -687,124 +687,7 @@ namespace Ufba.vShome
 		/// </summary>
 		/// <param name="partition">Partition where new element is to be created.</param>
 		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
-		public Sensor(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
-			: base(partition, propertyAssignments)
-		{
-		}
-		#endregion
-	}
-}
-namespace Ufba.vShome
-{
-	/// <summary>
-	/// DomainClass CommentLink
-	/// Description for Ufba.vShome.CommentLink
-	/// </summary>
-	[DslDesign::DisplayNameResource("Ufba.vShome.CommentLink.DisplayName", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
-	[DslDesign::DescriptionResource("Ufba.vShome.CommentLink.Description", typeof(global::Ufba.vShome.vShomeDomainModel), "Ufba.vShome.GeneratedCode.DomainModelResx")]
-	[DslModeling::DomainModelOwner(typeof(global::Ufba.vShome.vShomeDomainModel))]
-	[global::System.CLSCompliant(true)]
-	[DslModeling::DomainObjectId("3f03c3a0-19d2-4d73-a0c8-a6491ffb0b24")]
-	public partial class CommentLink : DslDiagrams::BinaryLinkShape
-	{
-		#region DiagramElement boilerplate
-		private static DslDiagrams::StyleSet classStyleSet;
-		private static global::System.Collections.Generic.IList<DslDiagrams::ShapeField> shapeFields;
-		private static global::System.Collections.Generic.IList<DslDiagrams::Decorator> decorators;
-		
-		/// <summary>
-		/// Per-class style set for this shape.
-		/// </summary>
-		protected override DslDiagrams::StyleSet ClassStyleSet
-		{
-			get
-			{
-				if (classStyleSet == null)
-				{
-					classStyleSet = CreateClassStyleSet();
-				}
-				return classStyleSet;
-			}
-		}
-		
-		/// <summary>
-		/// Per-class ShapeFields for this shape.
-		/// </summary>
-		public override global::System.Collections.Generic.IList<DslDiagrams::ShapeField> ShapeFields
-		{
-			get
-			{
-				if (shapeFields == null)
-				{
-					shapeFields = CreateShapeFields();
-				}
-				return shapeFields;
-			}
-		}
-		
-		/// <summary>
-		/// Event fired when decorator initialization is complete for this shape type.
-		/// </summary>
-		public static event global::System.EventHandler DecoratorsInitialized;
-		
-		/// <summary>
-		/// List containing decorators used by this type.
-		/// </summary>
-		public override global::System.Collections.Generic.IList<DslDiagrams::Decorator> Decorators
-		{
-			get 
-			{
-				if(decorators == null)
-				{
-					decorators = CreateDecorators();
-					
-					// fire this event to allow the diagram to initialize decorator mappings for this shape type.
-					if(DecoratorsInitialized != null)
-					{
-						DecoratorsInitialized(this, global::System.EventArgs.Empty);
-					}
-				}
-				
-				return decorators; 
-			}
-		}
-		
-		/// <summary>
-		/// Finds a decorator associated with CommentLink.
-		/// </summary>
-		public static DslDiagrams::Decorator FindCommentLinkDecorator(string decoratorName)
-		{	
-			if(decorators == null) return null;
-			return DslDiagrams::ShapeElement.FindDecorator(decorators, decoratorName);
-		}
-		
-		#endregion
-		
-		#region Connector styles
-		#endregion
-		
-		#region Constructors, domain class Id
-	
-		/// <summary>
-		/// CommentLink domain class Id.
-		/// </summary>
-		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x3f03c3a0, 0x19d2, 0x4d73, 0xa0, 0xc8, 0xa6, 0x49, 0x1f, 0xfb, 0x0b, 0x24);
-		/// <summary>
-		/// Constructor
-		/// </summary>
-		/// <param name="store">Store where new element is to be created.</param>
-		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
-		public CommentLink(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
-			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
-		{
-		}
-		
-		/// <summary>
-		/// Constructor
-		/// </summary>
-		/// <param name="partition">Partition where new element is to be created.</param>
-		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
-		public CommentLink(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
+		public SensorC(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
 			: base(partition, propertyAssignments)
 		{
 		}

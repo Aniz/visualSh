@@ -46,19 +46,23 @@
       <Link>vShomeSchema.xsd</Link>
       <SubType>Designer</SubType>
     </None>
-    <None Include="vShomeReport.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>vShomeReport.vShome</LastGenOutput>
-    </None>
-    <None Include="vShomeReport.vShome">
+    <None Include="vShomeReport.shome">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>vShomeReport.tt</DependentUpon>
-      <SubType>Designer</SubType>
+    </None>
+    <None Include="vShomeReport.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>vShomeReport.shome</LastGenOutput>
+    </None>
+    <None Include="vShomeReportVB.shome">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vShomeReportVB.tt</DependentUpon>
     </None>
     <None Include="vShomeReportVB.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>vShomeReportVB.vShome</LastGenOutput>
+      <LastGenOutput>vShomeReportVB.shome</LastGenOutput>
     </None>
     <None Include="Sample.visSHome" />
     <None Include="Sample.visSHome.diagram">
@@ -69,11 +73,6 @@
     </None>
     <None Include="Test.visSHome.diagram">
       <DependentUpon>Test.visSHome</DependentUpon>
-    </None>
-    <None Include="vShomeReportVB.vShome">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>vShomeReportVB.tt</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

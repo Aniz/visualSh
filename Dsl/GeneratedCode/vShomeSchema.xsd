@@ -7,28 +7,6 @@
     <xsd:complexContent>
       <xsd:extension base="core:ModelElement">
         <xsd:sequence minOccurs="0" maxOccurs="1">
-          <!-- Relationship: ModelRootHasComments -->
-          <xsd:element name="comments" minOccurs="0" maxOccurs="1">
-            <xsd:annotation>
-              <xsd:documentation>Instances of ModelRootHasComments</xsd:documentation>
-            </xsd:annotation>
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:choice minOccurs="0" maxOccurs="unbounded" >
-                  <xsd:element ref="modelRootHasComments">
-                    <xsd:annotation>
-                      <xsd:documentation>[Relationship deriving from ModelRootHasComments needs to be serialized in full-form]</xsd:documentation>
-                    </xsd:annotation>
-                  </xsd:element>
-                  <xsd:element ref="comment" >
-                    <xsd:annotation>
-                      <xsd:documentation>[Target role-player]</xsd:documentation>
-                    </xsd:annotation>
-                  </xsd:element>
-                </xsd:choice>
-              </xsd:sequence>
-            </xsd:complexType>
-          </xsd:element>
           <!-- Relationship: ModelRootHasFeatures -->
           <xsd:element name="features" minOccurs="0" maxOccurs="1">
             <xsd:annotation>
@@ -212,57 +190,6 @@
     </xsd:complexContent>
   </xsd:complexType>
   
-  <!-- Comment -->
-  <xsd:element name="comment" type="Comment" substitutionGroup="core:modelElement" />
-  <xsd:complexType name="Comment">
-    <xsd:complexContent>
-      <xsd:extension base="core:ModelElement">
-        <xsd:sequence minOccurs="0" maxOccurs="1">
-          <!-- Relationship: CommentReferencesFeatures -->
-          <xsd:element name="features" minOccurs="0" maxOccurs="1">
-            <xsd:annotation>
-              <xsd:documentation>Instances of CommentReferencesFeatures</xsd:documentation>
-            </xsd:annotation>
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element ref="commentReferencesFeatures" minOccurs="0" maxOccurs="unbounded">
-                  <xsd:annotation>
-                    <xsd:documentation>[Instance of CommentReferencesFeatures needs to be serialized in full-form]</xsd:documentation>
-                  </xsd:annotation>
-                </xsd:element>
-              </xsd:sequence>
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:sequence>
-        <!-- Id -->
-        <xsd:attribute name="Id" type="xsd:string">
-          <xsd:annotation>
-            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
-          </xsd:annotation>
-        </xsd:attribute>
-        <!-- Property: Text -->
-        <xsd:attribute name="text" type="xsd:string" />
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  
-  <!-- Comment Moniker -->
-  <xsd:element name="commentMoniker" type="CommentMoniker" substitutionGroup="core:modelElementMoniker" />
-  <xsd:complexType name="CommentMoniker">
-    <xsd:annotation>
-      <xsd:documentation>Moniker for Comment instance.</xsd:documentation>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="core:ModelElementMoniker">
-        <xsd:attribute name="Id" type="xsd:string" >
-          <xsd:annotation>
-            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
-          </xsd:annotation>
-        </xsd:attribute>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  
   <!-- Device -->
   <xsd:element name="device" type="Device" substitutionGroup="core:modelElement" />
   <xsd:complexType name="Device">
@@ -289,46 +216,6 @@
   <xsd:complexType name="DeviceMoniker">
     <xsd:annotation>
       <xsd:documentation>Moniker for Device instance.</xsd:documentation>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="core:ModelElementMoniker">
-        <xsd:attribute name="Id" type="xsd:string" >
-          <xsd:annotation>
-            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
-          </xsd:annotation>
-        </xsd:attribute>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  
-  <!-- ModelRootHasComments -->
-  <xsd:element name="modelRootHasComments" abstract="true" type="ModelRootHasComments" substitutionGroup="core:modelElement" />
-  <xsd:complexType name="ModelRootHasComments" abstract="true" >
-    <xsd:complexContent>
-      <xsd:extension base="core:ModelElement">
-        <xsd:sequence minOccurs="0" maxOccurs="1">
-          <!-- Target end Comment -->
-          <xsd:element ref="comment" minOccurs="1" maxOccurs="1">
-            <xsd:annotation>
-              <xsd:documentation>[Target role-player]</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-        <!-- Id -->
-        <xsd:attribute name="Id" type="xsd:string">
-          <xsd:annotation>
-            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
-          </xsd:annotation>
-        </xsd:attribute>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  
-  <!-- ModelRootHasComments Moniker -->
-  <xsd:element name="modelRootHasCommentsMoniker" type="ModelRootHasCommentsMoniker" substitutionGroup="core:modelElementMoniker" />
-  <xsd:complexType name="ModelRootHasCommentsMoniker">
-    <xsd:annotation>
-      <xsd:documentation>Moniker for ModelRootHasComments instance.</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
       <xsd:extension base="core:ModelElementMoniker">
@@ -609,46 +496,6 @@
   <xsd:complexType name="FeatureReferencesAlternativesMoniker">
     <xsd:annotation>
       <xsd:documentation>Moniker for FeatureReferencesAlternatives instance.</xsd:documentation>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="core:ModelElementMoniker">
-        <xsd:attribute name="Id" type="xsd:string" >
-          <xsd:annotation>
-            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
-          </xsd:annotation>
-        </xsd:attribute>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  
-  <!-- CommentReferencesFeatures -->
-  <xsd:element name="commentReferencesFeatures" type="CommentReferencesFeatures" substitutionGroup="core:modelElement" />
-  <xsd:complexType name="CommentReferencesFeatures">
-    <xsd:complexContent>
-      <xsd:extension base="core:ModelElement">
-        <xsd:sequence minOccurs="0" maxOccurs="1">
-          <!-- Target end Feature -->
-          <xsd:element ref="featureMoniker" minOccurs="1" maxOccurs="1">
-            <xsd:annotation>
-              <xsd:documentation>[Target role-player]</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-        <!-- Id -->
-        <xsd:attribute name="Id" type="xsd:string">
-          <xsd:annotation>
-            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
-          </xsd:annotation>
-        </xsd:attribute>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  
-  <!-- CommentReferencesFeatures Moniker -->
-  <xsd:element name="commentReferencesFeaturesMoniker" type="CommentReferencesFeaturesMoniker" substitutionGroup="core:modelElementMoniker" />
-  <xsd:complexType name="CommentReferencesFeaturesMoniker">
-    <xsd:annotation>
-      <xsd:documentation>Moniker for CommentReferencesFeatures instance.</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
       <xsd:extension base="core:ModelElementMoniker">

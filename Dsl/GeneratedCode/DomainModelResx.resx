@@ -181,22 +181,6 @@
     <value>Feature Name</value>
     <comment>DisplayName for DomainProperty &apos;FeatureName&apos; on DomainClass &apos;Feature&apos;</comment>
   </data>
-  <data name="Ufba.vShome.Comment.Description" xml:space="preserve">
-    <value></value>
-    <comment>Description for DomainClass &apos;Comment&apos;</comment>
-  </data>
-  <data name="Ufba.vShome.Comment.DisplayName" xml:space="preserve">
-    <value>Comment</value>
-    <comment>DisplayName for DomainClass &apos;Comment&apos;</comment>
-  </data>
-  <data name="Ufba.vShome.Comment/Text.Description" xml:space="preserve">
-    <value></value>
-    <comment>Description for DomainProperty &apos;Text&apos; on DomainClass &apos;Comment&apos;</comment>
-  </data>
-  <data name="Ufba.vShome.Comment/Text.DisplayName" xml:space="preserve">
-    <value>Text</value>
-    <comment>DisplayName for DomainProperty &apos;Text&apos; on DomainClass &apos;Comment&apos;</comment>
-  </data>
   <data name="Ufba.vShome.Device.Description" xml:space="preserve">
     <value>Description for Ufba.vShome.Device</value>
     <comment>Description for DomainClass &apos;Device&apos;</comment>
@@ -228,38 +212,6 @@
   <data name="Ufba.vShome.Device/DeviceType.DisplayName" xml:space="preserve">
     <value>Device Type</value>
     <comment>DisplayName for DomainProperty &apos;DeviceType&apos; on DomainClass &apos;Device&apos;</comment>
-  </data>
-  <data name="Ufba.vShome.ModelRootHasComments.Description" xml:space="preserve">
-    <value></value>
-    <comment>Description for DomainClass &apos;ModelRootHasComments&apos;</comment>
-  </data>
-  <data name="Ufba.vShome.ModelRootHasComments.DisplayName" xml:space="preserve">
-    <value>Model Root Has Comments</value>
-    <comment>DisplayName for DomainClass &apos;ModelRootHasComments&apos;</comment>
-  </data>
-  <data name="Ufba.vShome.ModelRootHasComments/ModelRoot.Description" xml:space="preserve">
-    <value></value>
-    <comment>Description for DomainRole &apos;ModelRoot&apos; on DomainRelationship &apos;ModelRootHasComments&apos;</comment>
-  </data>
-  <data name="Ufba.vShome.ModelRootHasComments/ModelRoot.DisplayName" xml:space="preserve">
-    <value>Model Root</value>
-    <comment>DisplayName for DomainRole &apos;ModelRoot&apos; on DomainRelationship &apos;ModelRootHasComments&apos;</comment>
-  </data>
-  <data name="Ufba.vShome.ModelRootHasComments/ModelRoot.PropertyDisplayName" xml:space="preserve">
-    <value>Comments</value>
-    <comment>PropertyDisplayName for DomainRole &apos;ModelRoot&apos; on DomainRelationship &apos;ModelRootHasComments&apos;</comment>
-  </data>
-  <data name="Ufba.vShome.ModelRootHasComments/Comment.Description" xml:space="preserve">
-    <value></value>
-    <comment>Description for DomainRole &apos;Comment&apos; on DomainRelationship &apos;ModelRootHasComments&apos;</comment>
-  </data>
-  <data name="Ufba.vShome.ModelRootHasComments/Comment.DisplayName" xml:space="preserve">
-    <value>Comment</value>
-    <comment>DisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;ModelRootHasComments&apos;</comment>
-  </data>
-  <data name="Ufba.vShome.ModelRootHasComments/Comment.PropertyDisplayName" xml:space="preserve">
-    <value>Model Root</value>
-    <comment>PropertyDisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;ModelRootHasComments&apos;</comment>
   </data>
   <data name="Ufba.vShome.FeatureReferencesActuator.Description" xml:space="preserve">
     <value>Description for Ufba.vShome.FeatureReferencesActuator</value>
@@ -484,38 +436,6 @@
   <data name="Ufba.vShome.FeatureReferencesAlternatives/TargetFeature.PropertyDisplayName" xml:space="preserve">
     <value>Source Features</value>
     <comment>PropertyDisplayName for DomainRole &apos;TargetFeature&apos; on DomainRelationship &apos;FeatureReferencesAlternatives&apos;</comment>
-  </data>
-  <data name="Ufba.vShome.CommentReferencesFeatures.Description" xml:space="preserve">
-    <value>Description for Ufba.vShome.CommentReferencesFeatures</value>
-    <comment>Description for DomainClass &apos;CommentReferencesFeatures&apos;</comment>
-  </data>
-  <data name="Ufba.vShome.CommentReferencesFeatures.DisplayName" xml:space="preserve">
-    <value>Comment References Features</value>
-    <comment>DisplayName for DomainClass &apos;CommentReferencesFeatures&apos;</comment>
-  </data>
-  <data name="Ufba.vShome.CommentReferencesFeatures/Comment.Description" xml:space="preserve">
-    <value>Description for Ufba.vShome.CommentReferencesFeatures.Comment</value>
-    <comment>Description for DomainRole &apos;Comment&apos; on DomainRelationship &apos;CommentReferencesFeatures&apos;</comment>
-  </data>
-  <data name="Ufba.vShome.CommentReferencesFeatures/Comment.DisplayName" xml:space="preserve">
-    <value>Comment</value>
-    <comment>DisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;CommentReferencesFeatures&apos;</comment>
-  </data>
-  <data name="Ufba.vShome.CommentReferencesFeatures/Comment.PropertyDisplayName" xml:space="preserve">
-    <value>Features</value>
-    <comment>PropertyDisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;CommentReferencesFeatures&apos;</comment>
-  </data>
-  <data name="Ufba.vShome.CommentReferencesFeatures/Feature.Description" xml:space="preserve">
-    <value>Description for Ufba.vShome.CommentReferencesFeatures.Feature</value>
-    <comment>Description for DomainRole &apos;Feature&apos; on DomainRelationship &apos;CommentReferencesFeatures&apos;</comment>
-  </data>
-  <data name="Ufba.vShome.CommentReferencesFeatures/Feature.DisplayName" xml:space="preserve">
-    <value>Feature</value>
-    <comment>DisplayName for DomainRole &apos;Feature&apos; on DomainRelationship &apos;CommentReferencesFeatures&apos;</comment>
-  </data>
-  <data name="Ufba.vShome.CommentReferencesFeatures/Feature.PropertyDisplayName" xml:space="preserve">
-    <value>Comments</value>
-    <comment>PropertyDisplayName for DomainRole &apos;Feature&apos; on DomainRelationship &apos;CommentReferencesFeatures&apos;</comment>
   </data>
   <data name="Ufba.vShome.AccessModifier/Public.DisplayName" xml:space="preserve">
     <value>Public</value>
@@ -821,18 +741,6 @@
     <value>Description for Ufba.vShome.FeatureType.Optional</value>
     <comment>Description for EnumerationLiteral &apos;Optional&apos; on DomainEnumeration &apos;FeatureType&apos;</comment>
   </data>
-  <data name="Ufba.vShome.CommentBoxShape.Description" xml:space="preserve">
-    <value></value>
-    <comment>Description for DomainClass &apos;CommentBoxShape&apos;</comment>
-  </data>
-  <data name="Ufba.vShome.CommentBoxShape.DisplayName" xml:space="preserve">
-    <value>Comment Box Shape</value>
-    <comment>DisplayName for DomainClass &apos;CommentBoxShape&apos;</comment>
-  </data>
-  <data name="CommentBoxShapeCommentDefaultText" xml:space="preserve">
-    <value>BusinessRulesShapeNameDecorator</value>
-    <comment>Text decorator default text</comment>
-  </data>
   <data name="Ufba.vShome.FeatureShape.Description" xml:space="preserve">
     <value>Description for Ufba.vShome.FeatureShape</value>
     <comment>Description for DomainClass &apos;FeatureShape&apos;</comment>
@@ -881,45 +789,37 @@
     <value>Actuator Connector</value>
     <comment>DisplayName for DomainClass &apos;ActuatorConnector&apos;</comment>
   </data>
-  <data name="Ufba.vShome.Father.Description" xml:space="preserve">
-    <value>Description for Ufba.vShome.Father</value>
-    <comment>Description for DomainClass &apos;Father&apos;</comment>
+  <data name="Ufba.vShome.FatherC.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.FatherC</value>
+    <comment>Description for DomainClass &apos;FatherC&apos;</comment>
   </data>
-  <data name="Ufba.vShome.Father.DisplayName" xml:space="preserve">
-    <value>Father</value>
-    <comment>DisplayName for DomainClass &apos;Father&apos;</comment>
+  <data name="Ufba.vShome.FatherC.DisplayName" xml:space="preserve">
+    <value>Father C</value>
+    <comment>DisplayName for DomainClass &apos;FatherC&apos;</comment>
   </data>
-  <data name="Ufba.vShome.Brother.Description" xml:space="preserve">
-    <value>Description for Ufba.vShome.Brother</value>
-    <comment>Description for DomainClass &apos;Brother&apos;</comment>
+  <data name="Ufba.vShome.BrotherC.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.BrotherC</value>
+    <comment>Description for DomainClass &apos;BrotherC&apos;</comment>
   </data>
-  <data name="Ufba.vShome.Brother.DisplayName" xml:space="preserve">
-    <value>Brother</value>
-    <comment>DisplayName for DomainClass &apos;Brother&apos;</comment>
+  <data name="Ufba.vShome.BrotherC.DisplayName" xml:space="preserve">
+    <value>Brother C</value>
+    <comment>DisplayName for DomainClass &apos;BrotherC&apos;</comment>
   </data>
-  <data name="Ufba.vShome.Alternative.Description" xml:space="preserve">
-    <value>Description for Ufba.vShome.Alternative</value>
-    <comment>Description for DomainClass &apos;Alternative&apos;</comment>
+  <data name="Ufba.vShome.AlternativeC.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.AlternativeC</value>
+    <comment>Description for DomainClass &apos;AlternativeC&apos;</comment>
   </data>
-  <data name="Ufba.vShome.Alternative.DisplayName" xml:space="preserve">
-    <value>Alternative</value>
-    <comment>DisplayName for DomainClass &apos;Alternative&apos;</comment>
+  <data name="Ufba.vShome.AlternativeC.DisplayName" xml:space="preserve">
+    <value>Alternative C</value>
+    <comment>DisplayName for DomainClass &apos;AlternativeC&apos;</comment>
   </data>
-  <data name="Ufba.vShome.Sensor.Description" xml:space="preserve">
-    <value>Description for Ufba.vShome.Sensor</value>
-    <comment>Description for DomainClass &apos;Sensor&apos;</comment>
+  <data name="Ufba.vShome.SensorC.Description" xml:space="preserve">
+    <value>Description for Ufba.vShome.SensorC</value>
+    <comment>Description for DomainClass &apos;SensorC&apos;</comment>
   </data>
-  <data name="Ufba.vShome.Sensor.DisplayName" xml:space="preserve">
-    <value>Sensor</value>
-    <comment>DisplayName for DomainClass &apos;Sensor&apos;</comment>
-  </data>
-  <data name="Ufba.vShome.CommentLink.Description" xml:space="preserve">
-    <value>Description for Ufba.vShome.CommentLink</value>
-    <comment>Description for DomainClass &apos;CommentLink&apos;</comment>
-  </data>
-  <data name="Ufba.vShome.CommentLink.DisplayName" xml:space="preserve">
-    <value>Comment Link</value>
-    <comment>DisplayName for DomainClass &apos;CommentLink&apos;</comment>
+  <data name="Ufba.vShome.SensorC.DisplayName" xml:space="preserve">
+    <value>Sensor C</value>
+    <comment>DisplayName for DomainClass &apos;SensorC&apos;</comment>
   </data>
   <data name="FormatList" xml:space="preserve">
     <value>Class Diagrams (*.visSHome)|*.visSHome</value>
@@ -940,14 +840,6 @@
   <data name="Class DiagramsToolboxTab" xml:space="preserve">
     <value>Class Diagrams</value>
     <comment>Toolbox item tab name</comment>
-  </data>
-  <data name="CommentToolboxItem" xml:space="preserve">
-    <value>Comment</value>
-    <comment>Toolbox item name</comment>
-  </data>
-  <data name="CommentToolboxTooltip" xml:space="preserve">
-    <value>Create a Comment</value>
-    <comment>Toolbox tooltip text</comment>
   </data>
   <data name="DeviceToolboxItem" xml:space="preserve">
     <value>Device</value>
@@ -1003,14 +895,6 @@
   </data>
   <data name="BrotherToolboxTooltip" xml:space="preserve">
     <value>Brother</value>
-    <comment>Toolbox tooltip text</comment>
-  </data>
-  <data name="CommentLinkToolboxItem" xml:space="preserve">
-    <value>CommentLink</value>
-    <comment>Toolbox item name</comment>
-  </data>
-  <data name="CommentLinkToolboxTooltip" xml:space="preserve">
-    <value>Comment Link</value>
     <comment>Toolbox tooltip text</comment>
   </data>
   <data name="UnresolvedToolboxItem" xml:space="preserve">
@@ -1138,10 +1022,6 @@ A DomainClass can be serialized as a moniker only if
     <comment>Message when validation errors are found on save that will cause file to become unloadable</comment>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="CommentToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
-    <value>..\resources\commenttool.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment>Toolbox item image</comment>
-  </data>
   <data name="DeviceToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
     <value>..\Resources\ElementToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Toolbox item image</comment>
@@ -1168,10 +1048,6 @@ A DomainClass can be serialized as a moniker only if
   </data>
   <data name="BrotherToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
     <value>..\Resources\UnidirectionTool.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment>Toolbox item image</comment>
-  </data>
-  <data name="CommentLinkToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
-    <value>..\Resources\CommentLinkTool.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Toolbox item image</comment>
   </data>
 </root>

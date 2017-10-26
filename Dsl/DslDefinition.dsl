@@ -17,14 +17,6 @@
       <ElementMergeDirectives>
         <ElementMergeDirective>
           <Index>
-            <DomainClassMoniker Name="Comment" />
-          </Index>
-          <LinkCreationPaths>
-            <DomainPath>ModelRootHasComments.Comments</DomainPath>
-          </LinkCreationPaths>
-        </ElementMergeDirective>
-        <ElementMergeDirective>
-          <Index>
             <DomainClassMoniker Name="Feature" />
           </Index>
           <LinkCreationPaths>
@@ -60,15 +52,6 @@
         </DomainProperty>
       </Properties>
     </DomainClass>
-    <DomainClass Id="2aa65212-fa5a-4104-8e30-706f532c2271" Description="" Name="Comment" DisplayName="Comment" Namespace="Ufba.vShome">
-      <Properties>
-        <DomainProperty Id="a083ae06-49a1-4f14-9c8e-784f0e67f6e4" Description="" Name="Text" DisplayName="Text" DefaultValue="">
-          <Type>
-            <ExternalTypeMoniker Name="/System/String" />
-          </Type>
-        </DomainProperty>
-      </Properties>
-    </DomainClass>
     <DomainClass Id="af1f2194-4417-4e7d-ba28-689526062b9c" Description="Description for Ufba.vShome.Device" Name="Device" DisplayName="Device" Namespace="Ufba.vShome">
       <Properties>
         <DomainProperty Id="bbaae1ce-eefb-4958-b5a4-4c56dce0b281" Description="Description for Ufba.vShome.Device.Name" Name="Name" DisplayName="Name">
@@ -90,22 +73,6 @@
     </DomainClass>
   </Classes>
   <Relationships>
-    <DomainRelationship Id="959ab9b7-5660-4aad-8d2b-b73d7c4e6264" Description="" Name="ModelRootHasComments" DisplayName="Model Root Has Comments" Namespace="Ufba.vShome" IsEmbedding="true">
-      <Source>
-        <DomainRole Id="881e6257-c4e7-4f2f-a468-5c6bc6c28fb6" Description="" Name="ModelRoot" DisplayName="Model Root" PropertyName="Comments" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Comments">
-          <RolePlayer>
-            <DomainClassMoniker Name="ModelRoot" />
-          </RolePlayer>
-        </DomainRole>
-      </Source>
-      <Target>
-        <DomainRole Id="c244d2a7-9c4e-4441-8bcc-a46b15d5bff8" Description="" Name="Comment" DisplayName="Comment" PropertyName="ModelRoot" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Model Root">
-          <RolePlayer>
-            <DomainClassMoniker Name="Comment" />
-          </RolePlayer>
-        </DomainRole>
-      </Target>
-    </DomainRelationship>
     <DomainRelationship Id="dfb7297c-d2e3-432b-b512-9aaa9da28427" Description="Description for Ufba.vShome.FeatureReferencesActuator" Name="FeatureReferencesActuator" DisplayName="Feature References Actuator" Namespace="Ufba.vShome">
       <Source>
         <DomainRole Id="bb42e52d-a5bb-4dcd-9754-1653804691c5" Description="Description for Ufba.vShome.FeatureReferencesActuator.Feature" Name="Feature" DisplayName="Feature" PropertyName="Actuator" Multiplicity="One" PropertyDisplayName="Actuator">
@@ -218,22 +185,6 @@
         </DomainRole>
       </Target>
     </DomainRelationship>
-    <DomainRelationship Id="0c79162a-4a9e-4fc0-b610-4f9550565b44" Description="Description for Ufba.vShome.CommentReferencesFeatures" Name="CommentReferencesFeatures" DisplayName="Comment References Features" Namespace="Ufba.vShome">
-      <Source>
-        <DomainRole Id="c4ed8692-a3eb-4abd-8cba-aeab31899d3e" Description="Description for Ufba.vShome.CommentReferencesFeatures.Comment" Name="Comment" DisplayName="Comment" PropertyName="Features" PropertyDisplayName="Features">
-          <RolePlayer>
-            <DomainClassMoniker Name="Comment" />
-          </RolePlayer>
-        </DomainRole>
-      </Source>
-      <Target>
-        <DomainRole Id="4aa8db9c-c2f9-4263-a8e8-524cfd5f4251" Description="Description for Ufba.vShome.CommentReferencesFeatures.Feature" Name="Feature" DisplayName="Feature" PropertyName="Comments" PropertyDisplayName="Comments">
-          <RolePlayer>
-            <DomainClassMoniker Name="Feature" />
-          </RolePlayer>
-        </DomainRole>
-      </Target>
-    </DomainRelationship>
   </Relationships>
   <Types>
     <ExternalType Name="DateTime" Namespace="System" />
@@ -327,11 +278,6 @@
     </DomainEnumeration>
   </Types>
   <Shapes>
-    <GeometryShape Id="3c5ae777-0fc2-45f7-a3f0-fd4ce738f80a" Description="" Name="CommentBoxShape" DisplayName="Comment Box Shape" Namespace="Ufba.vShome" FixedTooltipText="Comment Box Shape" FillColor="255, 255, 204" OutlineColor="204, 204, 102" InitialHeight="0.3" OutlineThickness="0.01" FillGradientMode="None" Geometry="Rectangle">
-      <ShapeHasDecorators Position="Center" HorizontalOffset="0" VerticalOffset="0">
-        <TextDecorator Name="Comment" DisplayName="Comment" DefaultText="BusinessRulesShapeNameDecorator" />
-      </ShapeHasDecorators>
-    </GeometryShape>
     <GeometryShape Id="6c3d8e9d-ae1f-41d5-bd81-6356b20d70e7" Description="Description for Ufba.vShome.FeatureShape" Name="FeatureShape" DisplayName="Feature Shape" Namespace="Ufba.vShome" FixedTooltipText="Feature Shape" FillColor="192, 255, 255" InitialHeight="0.7" Geometry="RoundedRectangle">
       <ShapeHasDecorators Position="InnerTopCenter" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Name" DisplayName="Name" DefaultText="Name" />
@@ -357,23 +303,16 @@
   </Shapes>
   <Connectors>
     <Connector Id="fe3d32f2-4fb1-430e-9154-63ab0dc86d77" Description="Description for Ufba.vShome.ActuatorConnector" Name="ActuatorConnector" DisplayName="Actuator Connector" Namespace="Ufba.vShome" FixedTooltipText="Actuator Connector" />
-    <Connector Id="133eddb3-963a-4de8-82e1-a638f16bb74e" Description="Description for Ufba.vShome.Father" Name="Father" DisplayName="Father" Namespace="Ufba.vShome" FixedTooltipText="Father" Color="Plum" TargetEndStyle="FilledArrow" />
-    <Connector Id="2f46d126-beb6-429a-bb2d-9379546f7cff" Description="Description for Ufba.vShome.Brother" Name="Brother" DisplayName="Brother" Namespace="Ufba.vShome" FixedTooltipText="Brother" Color="Indigo" SourceEndStyle="EmptyDiamond" TargetEndStyle="EmptyDiamond" />
-    <Connector Id="015221af-d804-4e57-8545-6714a3e8bdbc" Description="Description for Ufba.vShome.Alternative" Name="Alternative" DisplayName="Alternative" Namespace="Ufba.vShome" FixedTooltipText="Alternative" Color="DarkViolet" SourceEndStyle="EmptyArrow" TargetEndStyle="EmptyArrow" />
-    <Connector Id="f830940c-8e9b-403f-acd7-7befff6b3722" Description="Description for Ufba.vShome.Sensor" Name="Sensor" DisplayName="Sensor" Namespace="Ufba.vShome" FixedTooltipText="Sensor" DashStyle="Dot" />
-    <Connector Id="3f03c3a0-19d2-4d73-a0c8-a6491ffb0b24" Description="Description for Ufba.vShome.CommentLink" Name="CommentLink" DisplayName="Comment Link" Namespace="Ufba.vShome" FixedTooltipText="Comment Link" />
+    <Connector Id="133eddb3-963a-4de8-82e1-a638f16bb74e" Description="Description for Ufba.vShome.FatherC" Name="FatherC" DisplayName="Father C" Namespace="Ufba.vShome" FixedTooltipText="Father C" Color="Plum" TargetEndStyle="FilledArrow" />
+    <Connector Id="2f46d126-beb6-429a-bb2d-9379546f7cff" Description="Description for Ufba.vShome.BrotherC" Name="BrotherC" DisplayName="Brother C" Namespace="Ufba.vShome" FixedTooltipText="Brother C" Color="DarkViolet" SourceEndStyle="EmptyArrow" TargetEndStyle="EmptyArrow" />
+    <Connector Id="015221af-d804-4e57-8545-6714a3e8bdbc" Description="Description for Ufba.vShome.AlternativeC" Name="AlternativeC" DisplayName="Alternative C" Namespace="Ufba.vShome" FixedTooltipText="Alternative C" Color="Indigo" SourceEndStyle="EmptyDiamond" TargetEndStyle="EmptyDiamond" />
+    <Connector Id="f830940c-8e9b-403f-acd7-7befff6b3722" Description="Description for Ufba.vShome.SensorC" Name="SensorC" DisplayName="Sensor C" Namespace="Ufba.vShome" FixedTooltipText="Sensor C" DashStyle="Dot" />
   </Connectors>
   <XmlSerializationBehavior Name="vShomeSerializationBehavior" Namespace="Ufba.vShome">
     <ClassData>
-      <XmlClassData TypeName="ModelRootHasComments" MonikerAttributeName="" SerializeId="true" MonikerElementName="modelRootHasCommentsMoniker" ElementName="modelRootHasComments" MonikerTypeName="ModelRootHasCommentsMoniker">
-        <DomainRelationshipMoniker Name="ModelRootHasComments" />
-      </XmlClassData>
       <XmlClassData TypeName="ModelRoot" MonikerAttributeName="" SerializeId="true" MonikerElementName="modelRootMoniker" ElementName="modelRoot" MonikerTypeName="ModelRootMoniker">
         <DomainClassMoniker Name="ModelRoot" />
         <ElementData>
-          <XmlRelationshipData RoleElementName="comments">
-            <DomainRelationshipMoniker Name="ModelRootHasComments" />
-          </XmlRelationshipData>
           <XmlRelationshipData UseFullForm="true" RoleElementName="features">
             <DomainRelationshipMoniker Name="ModelRootHasFeatures" />
           </XmlRelationshipData>
@@ -417,20 +356,6 @@
           </XmlPropertyData>
         </ElementData>
       </XmlClassData>
-      <XmlClassData TypeName="Comment" MonikerAttributeName="" SerializeId="true" MonikerElementName="commentMoniker" ElementName="comment" MonikerTypeName="CommentMoniker">
-        <DomainClassMoniker Name="Comment" />
-        <ElementData>
-          <XmlPropertyData XmlName="text">
-            <DomainPropertyMoniker Name="Comment/Text" />
-          </XmlPropertyData>
-          <XmlRelationshipData UseFullForm="true" RoleElementName="features">
-            <DomainRelationshipMoniker Name="CommentReferencesFeatures" />
-          </XmlRelationshipData>
-        </ElementData>
-      </XmlClassData>
-      <XmlClassData TypeName="CommentBoxShape" MonikerAttributeName="" SerializeId="true" MonikerElementName="commentBoxShapeMoniker" ElementName="commentBoxShape" MonikerTypeName="CommentBoxShapeMoniker">
-        <GeometryShapeMoniker Name="CommentBoxShape" />
-      </XmlClassData>
       <XmlClassData TypeName="vShomeDiagram" MonikerAttributeName="" SerializeId="true" MonikerElementName="vShomeDiagramMoniker" ElementName="vShomeDiagram" MonikerTypeName="VShomeDiagramMoniker">
         <DiagramMoniker Name="vShomeDiagram" />
       </XmlClassData>
@@ -466,8 +391,8 @@
       <XmlClassData TypeName="ActuatorConnector" MonikerAttributeName="" SerializeId="true" MonikerElementName="actuatorConnectorMoniker" ElementName="actuatorConnector" MonikerTypeName="ActuatorConnectorMoniker">
         <ConnectorMoniker Name="ActuatorConnector" />
       </XmlClassData>
-      <XmlClassData TypeName="Father" MonikerAttributeName="" SerializeId="true" MonikerElementName="fatherMoniker" ElementName="father" MonikerTypeName="FatherMoniker">
-        <ConnectorMoniker Name="Father" />
+      <XmlClassData TypeName="FatherC" MonikerAttributeName="" SerializeId="true" MonikerElementName="fatherCMoniker" ElementName="fatherC" MonikerTypeName="FatherCMoniker">
+        <ConnectorMoniker Name="FatherC" />
       </XmlClassData>
       <XmlClassData TypeName="DeviceShape" MonikerAttributeName="" SerializeId="true" MonikerElementName="deviceShapeMoniker" ElementName="deviceShape" MonikerTypeName="DeviceShapeMoniker">
         <GeometryShapeMoniker Name="DeviceShape" />
@@ -481,20 +406,14 @@
       <XmlClassData TypeName="FeatureReferencesAlternatives" MonikerAttributeName="" SerializeId="true" MonikerElementName="featureReferencesAlternativesMoniker" ElementName="featureReferencesAlternatives" MonikerTypeName="FeatureReferencesAlternativesMoniker">
         <DomainRelationshipMoniker Name="FeatureReferencesAlternatives" />
       </XmlClassData>
-      <XmlClassData TypeName="Brother" MonikerAttributeName="" SerializeId="true" MonikerElementName="brotherMoniker" ElementName="brother" MonikerTypeName="BrotherMoniker">
-        <ConnectorMoniker Name="Brother" />
+      <XmlClassData TypeName="BrotherC" MonikerAttributeName="" SerializeId="true" MonikerElementName="brotherCMoniker" ElementName="brotherC" MonikerTypeName="BrotherCMoniker">
+        <ConnectorMoniker Name="BrotherC" />
       </XmlClassData>
-      <XmlClassData TypeName="Alternative" MonikerAttributeName="" SerializeId="true" MonikerElementName="alternativeMoniker" ElementName="alternative" MonikerTypeName="AlternativeMoniker">
-        <ConnectorMoniker Name="Alternative" />
+      <XmlClassData TypeName="AlternativeC" MonikerAttributeName="" SerializeId="true" MonikerElementName="alternativeCMoniker" ElementName="alternativeC" MonikerTypeName="AlternativeCMoniker">
+        <ConnectorMoniker Name="AlternativeC" />
       </XmlClassData>
-      <XmlClassData TypeName="Sensor" MonikerAttributeName="" SerializeId="true" MonikerElementName="sensorMoniker" ElementName="sensor" MonikerTypeName="SensorMoniker">
-        <ConnectorMoniker Name="Sensor" />
-      </XmlClassData>
-      <XmlClassData TypeName="CommentReferencesFeatures" MonikerAttributeName="" SerializeId="true" MonikerElementName="commentReferencesFeaturesMoniker" ElementName="commentReferencesFeatures" MonikerTypeName="CommentReferencesFeaturesMoniker">
-        <DomainRelationshipMoniker Name="CommentReferencesFeatures" />
-      </XmlClassData>
-      <XmlClassData TypeName="CommentLink" MonikerAttributeName="" SerializeId="true" MonikerElementName="commentLinkMoniker" ElementName="commentLink" MonikerTypeName="CommentLinkMoniker">
-        <ConnectorMoniker Name="CommentLink" />
+      <XmlClassData TypeName="SensorC" MonikerAttributeName="" SerializeId="true" MonikerElementName="sensorCMoniker" ElementName="sensorC" MonikerTypeName="SensorCMoniker">
+        <ConnectorMoniker Name="SensorC" />
       </XmlClassData>
     </ClassData>
   </XmlSerializationBehavior>
@@ -595,46 +514,12 @@
         </TargetDirectives>
       </LinkConnectDirective>
     </ConnectionBuilder>
-    <ConnectionBuilder Name="CommentReferencesFeaturesBuilder">
-      <LinkConnectDirective>
-        <DomainRelationshipMoniker Name="CommentReferencesFeatures" />
-        <SourceDirectives>
-          <RolePlayerConnectDirective>
-            <AcceptingClass>
-              <DomainClassMoniker Name="Comment" />
-            </AcceptingClass>
-          </RolePlayerConnectDirective>
-        </SourceDirectives>
-        <TargetDirectives>
-          <RolePlayerConnectDirective>
-            <AcceptingClass>
-              <DomainClassMoniker Name="Feature" />
-            </AcceptingClass>
-          </RolePlayerConnectDirective>
-        </TargetDirectives>
-      </LinkConnectDirective>
-    </ConnectionBuilder>
   </ConnectionBuilders>
   <Diagram Id="66143188-5fb3-44fe-9064-0d7028b3e6c6" Description="" Name="vShomeDiagram" DisplayName="Class Diagram" Namespace="Ufba.vShome">
     <Class>
       <DomainClassMoniker Name="ModelRoot" />
     </Class>
     <ShapeMaps>
-      <ShapeMap>
-        <DomainClassMoniker Name="Comment" />
-        <ParentElementPath>
-          <DomainPath>ModelRootHasComments.ModelRoot/!ModelRoot</DomainPath>
-        </ParentElementPath>
-        <DecoratorMap>
-          <TextDecoratorMoniker Name="CommentBoxShape/Comment" />
-          <PropertyDisplayed>
-            <PropertyPath>
-              <DomainPropertyMoniker Name="Comment/Text" />
-            </PropertyPath>
-          </PropertyDisplayed>
-        </DecoratorMap>
-        <GeometryShapeMoniker Name="CommentBoxShape" />
-      </ShapeMap>
       <ShapeMap>
         <DomainClassMoniker Name="Feature" />
         <ParentElementPath>
@@ -712,24 +597,20 @@
         <DomainRelationshipMoniker Name="FeatureReferencesActuator" />
       </ConnectorMap>
       <ConnectorMap>
-        <ConnectorMoniker Name="Father" />
+        <ConnectorMoniker Name="FatherC" />
         <DomainRelationshipMoniker Name="FeatureReferencesFather" />
       </ConnectorMap>
       <ConnectorMap>
-        <ConnectorMoniker Name="Alternative" />
+        <ConnectorMoniker Name="AlternativeC" />
         <DomainRelationshipMoniker Name="FeatureReferencesAlternatives" />
       </ConnectorMap>
       <ConnectorMap>
-        <ConnectorMoniker Name="Brother" />
+        <ConnectorMoniker Name="BrotherC" />
         <DomainRelationshipMoniker Name="FeatureReferencesBrother" />
       </ConnectorMap>
       <ConnectorMap>
-        <ConnectorMoniker Name="Sensor" />
+        <ConnectorMoniker Name="SensorC" />
         <DomainRelationshipMoniker Name="FeatureReferencesSensor" />
-      </ConnectorMap>
-      <ConnectorMap>
-        <ConnectorMoniker Name="CommentLink" />
-        <DomainRelationshipMoniker Name="CommentReferencesFeatures" />
       </ConnectorMap>
     </ConnectorMaps>
   </Diagram>
@@ -741,9 +622,6 @@
       <XmlSerializationBehaviorMoniker Name="vShomeSerializationBehavior" />
     </XmlSerializationDefinition>
     <ToolboxTab TabText="Class Diagrams">
-      <ElementTool Name="Comment" ToolboxIcon="resources\commenttool.bmp" Caption="Comment" Tooltip="Create a Comment" HelpKeyword="CommentF1Keyword">
-        <DomainClassMoniker Name="Comment" />
-      </ElementTool>
       <ElementTool Name="Device" ToolboxIcon="Resources\ElementToolBitmap.bmp" Caption="Device" Tooltip="Device" HelpKeyword="Device">
         <DomainClassMoniker Name="Device" />
       </ElementTool>
@@ -764,9 +642,6 @@
       </ConnectionTool>
       <ConnectionTool Name="Brother" ToolboxIcon="Resources\UnidirectionTool.bmp" Caption="Brother" Tooltip="Brother" HelpKeyword="Brother">
         <ConnectionBuilderMoniker Name="vShome/FeatureReferencesBrotherBuilder" />
-      </ConnectionTool>
-      <ConnectionTool Name="CommentLink" ToolboxIcon="Resources\CommentLinkTool.bmp" Caption="CommentLink" Tooltip="Comment Link" HelpKeyword="CommentLink">
-        <ConnectionBuilderMoniker Name="vShome/CommentReferencesFeaturesBuilder" />
       </ConnectionTool>
     </ToolboxTab>
     <Validation UsesMenu="true" UsesOpen="true" UsesSave="true" UsesLoad="false" />
