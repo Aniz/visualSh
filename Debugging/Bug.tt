@@ -1,6 +1,6 @@
 ﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
 <#@ output extension=".shome" #>
-<#@ vShome processor="vShomeDirectiveProcessor" requires="fileName='Test.visSHome'"  #>
+<#@ vShome processor="vShomeDirectiveProcessor" requires="fileName='Bug.visSHome'"  #>
 
 Report template
 

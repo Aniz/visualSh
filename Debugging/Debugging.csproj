@@ -46,6 +46,15 @@
       <Link>vShomeSchema.xsd</Link>
       <SubType>Designer</SubType>
     </None>
+    <None Include="Bug.shome">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bug.tt</DependentUpon>
+    </None>
+    <None Include="Bug.visSHome" />
+    <None Include="Bug.visSHome.diagram">
+      <DependentUpon>Bug.visSHome</DependentUpon>
+    </None>
     <None Include="vShomeReport.shome">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -77,6 +86,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4df5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bug.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Bug.shome</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

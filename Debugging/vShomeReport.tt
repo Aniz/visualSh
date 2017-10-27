@@ -40,7 +40,9 @@ foreach (Device device in this.ModelRoot.Devices)
 	#>
 	brother: <#= feature.Brother.FeatureName #>			
 	<#}#>
+	<# if (feature.Actuator != null){ #>
 	actuator: <#= feature.Actuator.Name #>
+	<#}#>
 	<# if (feature.Sensor != null){ #>
 	sensor: <#= feature.Sensor.Name #>
 	<#}#>

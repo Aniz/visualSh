@@ -6,9 +6,8 @@ Create rise "/dev/cu.usbmodem411"
     set AirConditioner Actuator as INFO
     set PresenceSensor Sensor as BOOL
     set Alarn Actuator as INFO
-    set AutomaticWindow Actuator as INFO
-    set TemperatureSensor Sensor as RANGE
-    set AutomaticDoors Actuator as INFO
+    set TemperatureSensor Actuator as RANGE
+    set AutomaticDoors Sensor as INFO
     set Led Actuator as INFO
   	
 	use Optional UserAirConditionerControl
@@ -27,15 +26,13 @@ Create rise "/dev/cu.usbmodem411"
 		
 	use Optional UserWindowControl
 			
-			actuator: AutomaticWindow
-				serial: 5575292698449566428L
+					serial: 5575292698449566428L
 		
 		
 	use Alternative AutomatedWindowControl
 		extends: UserWindowControl			
 			alternatives: AutomatedAirConditionerControl
-			actuator: AutomaticWindow
-			sensor: TemperatureSensor
+				sensor: TemperatureSensor
 			serial: 4435596811596503762L
 		
 		
@@ -72,11 +69,15 @@ Create rise "/dev/cu.usbmodem411"
 				serial: 4435596811596503762L
 		
 		
-	use OR AutomatedIluminationByPresence
+	use Optional AutomatedIluminationByPresence
 		extends: PresenceIlusion			
 			
 			actuator: Led
 			sensor: PresenceSensor
 			serial: 4435596811596503762L
 		
+		
+	use OR UserAirConditionerControl
+			
+					
 	
